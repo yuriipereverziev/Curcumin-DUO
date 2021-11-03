@@ -1,51 +1,61 @@
 .header {
-  padding: 10px 0;
   box-shadow: 3px 3px 10px rgba(3, 3, 3, 0.15);
-  background-color: $orange;
+  background: linear-gradient(-45deg, $white 50%,$orange  50%);
+}
 
-    //background: linear-gradient(-45deg, $white 78%,$orange  22%);
-
-
+.header__wrap {
+  position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  padding: 10px 0;
+  background: $white;
+  z-index: 2;
   @include rm(1220) {
     padding: 16px 0;
   }
 }
 
-
-
-.header__wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
 .header__logo {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
-  //max-width: 145px;
-  //width: 100%;
   font-size: 16px;
   font-weight: 700;
   border: 2px solid $white;
   border-radius: 10px;
   text-transform: uppercase;
   background: transparent;
-  //@include rm(768) {
-  //  width: 90px
-  //}
+
+  &::before {
+    position: absolute;
+    transform: skewX(-45deg);
+    content: "";
+    right: -40px;
+    top: -12px;
+    width: 300px;
+    height: 64px;
+    background: $orange;
+    z-index: -1;
+    @include rm(1024){
+      right: -45px;
+      top: -17px;
+      height: 74px;
+    }
+
+    @include rm(1220){
+      height: 76px;
+      top:-18px;
+    }
+  }
   @include rm(1024) {
-    margin-right: 50px;
     margin-right: 60px;
   }
-  //@include rm(1220) {
-  //  margin-right: 112px;
-  //  width: 96px;
-  //}
 }
 
 .logo__left {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
   color: #000;
   padding: 12px;
   background: $white;
@@ -54,6 +64,7 @@
 .logo__right {
   color: $white;
   padding: 12px;
+
 }
 
 

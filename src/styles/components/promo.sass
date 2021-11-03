@@ -1,0 +1,250 @@
+.promo
+	background: rgba(230,243,255,.7)
+	+rm(1024)
+		&.block
+			padding-bottom: 0
+	+rm(1220)
+		padding-top: 0
+		padding-bottom: 100px
+		background: url('../img/bg-header.jpg') no-repeat bottom
+		background-size: cover
+	&__top
+		padding-bottom: 20px
+		+rm(1024)
+			background: url('../img/people.png') no-repeat left calc(50% - 180px) bottom
+			background-size: 580px
+		+rm(1220)
+			padding-bottom: 44px
+			padding-top: 63px
+			background-position: calc(50% - 427px) bottom
+			background-size: 626px
+	&__wrap
+		display: flex
+		flex-direction: column
+		align-items: center
+		+rm(768)
+			position: relative
+		+rm(1220)
+			flex-direction: row
+			align-items: flex-start
+			justify-content: flex-end
+	&__center
+		margin-bottom: 55px
+		+rm(768)
+			margin-bottom: 45px
+		+rm(1220)
+			max-width: 372px
+			width: 100%
+			margin-right: 30px
+			padding-top: 3px
+	&__title
+		text-align: center
+		margin-bottom: 20px
+		+rm(640)
+			margin-bottom: 25px
+		+rm(1220)
+			text-align: left
+			margin-bottom: 45px
+			.name
+				display: block
+				margin-bottom: 4px
+				font-weight: bolder
+			.desc
+				font-size: 44px
+				font-weight: 800
+	&__list
+		max-width: 300px
+		width: 100%
+		margin: auto
+		margin-bottom: 35px
+		+rm(768)
+			display: flex
+			justify-content: space-between
+			max-width: 100%
+			margin-bottom: 0
+			.list__item
+				width: calc(100%/3 - 10px)
+		+rm(1024)
+			justify-content: space-around
+			.list__item
+				width: calc(100%/3 - 20px)
+		+rm(1220)
+			display: block
+			.list__item
+				width: 100%
+	&__wrap-pack
+		max-width: 300px
+		width: 100%
+		position: relative
+		left: calc(50% - 165px)
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			top: -30px
+			right: 18px
+			background: url('../img/label.png') no-repeat center
+			width: 80px
+			height: 80px
+			background-size: contain
+		+rm(640)
+			max-width: 330px
+			left: calc(50% - 185px)
+		+rm(768)
+			position: absolute
+			bottom: 100px
+			left: -17px
+			max-width: 410px
+			&::after
+				width: 110px
+		+rm(1024)
+			bottom: -80px
+			left: 230px
+			&::after
+				width: 100px
+				height: 100px
+		+rm(1220)
+			bottom: -221px
+			left: 60px
+			max-width: 463px
+			&::after
+				right: 54px
+	&__form
+		+rm(768)
+			margin-left: auto
+		+rm(1220)
+			margin-left: 0
+	&__security
+		padding-top: 11px
+		padding-bottom: 14px
+	&__bottom
+		+rm(1024)
+			background: $white
+			padding-bottom: 60px
+			padding-top: 80px
+		+rm(1220)
+			padding-bottom: 70px
+			padding-top: 21px
+	&__wrapper
+		max-width: 300px
+		width: 100%
+		margin: auto
+		+rm(768)
+			max-width: 100%
+			display: flex
+			align-items: center
+			justify-content: center
+		+rm(1220)
+			justify-content: flex-end
+
+
+.security
+	display: flex
+	align-items: center
+	justify-content: center
+	&__ico
+		flex-shrink: 0
+		margin-right: 10px
+	&__text
+		font-size: 15px
+		color: $light-grey
+
+
+.raiting
+	display: flex
+	align-items: center
+	justify-content: center
+	&__img
+		flex-shrink: 0
+		margin-right: 10px
+	&__link
+		font-size: 16px
+		color: $light-grey
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+
+//list
+.list
+	&__item
+		padding-left: 40px
+		font-size: 16px
+		line-height: 110%
+		position: relative
+		color: #666666
+		&:not(:last-of-type)
+			margin-bottom: 15px
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: 0px
+			width: 30px
+			height: 30px
+			background: url('../img/check-h.png') no-repeat center
+			background-size: contain
+		span
+			font-size: 18px
+			color: $dark-grey
+		+rm(768)
+			font-size: 18px
+			&:not(:last-of-type)
+				margin-bottom: 0
+			&::after
+				transform: none
+				top: 3px
+		+rm(1024)
+			padding-left: 45px
+			span
+				font-size: 19px
+			&::after
+				width: 35px
+				height: 35px
+				top: 0px
+		+rm(1220)
+			line-height: 26px
+			padding-left: 70px
+			font-size: 18px
+			span
+				font-size: 22px
+				display: block
+			&::after
+				width: 40px
+				height: 40px
+				top: 7px
+			&:not(:last-of-type)
+				margin-bottom: 23px
+
+
+.label
+	display: flex
+	align-items: center
+	&:not(:last-of-type)
+		margin-bottom: 20px
+	+rm(768)
+		width: calc(100%/2 - 20px)
+		&:not(:last-of-type)
+			margin-bottom: 0
+	+rm(1024)
+		width: 100%
+		max-width: 350px
+	+rm(1220)
+		max-width: 308px
+		&:not(:last-of-type)
+			margin-right: 12px
+	&__wrap
+		flex-shrink: 0
+		margin-right: 10px
+		width: 70px
+		+rm(768)
+			width: 80px
+		+rm(1024)
+			width: 90px
+		+rm(1220)
+			margin-right: 15px
+	&__text
+		color: $grey
+		font-size: 16px
+		line-height: 22px

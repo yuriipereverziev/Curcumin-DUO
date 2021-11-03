@@ -1,0 +1,48 @@
+.promo__top
+	.container
+		.promo__wrap
+			.promo__left
+			.promo__center
+				h1.promo__title.title 
+					span.blue.name MicroFlex Duo 
+					span.desc активное восстановление и&nbsp;поддержка суставов&nbsp;
+					span.blue 24/7
+				ul.promo__list.list
+					li.list__item 
+						span.text-bold Снимает 
+						| боль и&nbsp;воспаление
+					li.list__item
+						span.text-bold Помагает 
+						| при артритах и&nbsp;артрозах
+					li.list__item
+						span.text-bold Можно применять 
+						| для всех видов суставов
+				.promo__wrap-pack
+					picture
+						source(srcset="img/pack.webp", type="image/webp")
+						img.promo__pack(src="img/pack.png", alt="pack")
+			.promo__form
+				include form.pug
+				.promo__security.security
+					img.security__ico(src="img/security.png", alt="security")
+					p.security__text Ваши данные защищены!
+				.promo__raiting.raiting
+					img.raiting__img(src="img/raiting.png", alt="raiting")
+					a.raiting__link.js-scroll(href="#reviews") 142 отзыва
+.promo__bottom
+	.container
+		.promo__wrapper
+			.label
+				.label__wrap
+					picture
+						source(srcset="img/label_1.webp", type="image/webp")
+						img.label__img(src="img/label_1.png", alt="label")
+				p.label__text Рекомендован ассоциацией ветеранов легкой атлетики
+			.label
+				.label__wrap
+					picture
+						source(srcset="img/label_2.webp", type="image/webp")
+						img.label__img(src="img/label_2.png", alt="label")
+				p.label__text Рекомендован лучшими&nbsp;ревматологами
+					br
+					| страны

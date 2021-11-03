@@ -1,0 +1,73 @@
+.banner
+	display: none
+	+r(639)
+		display: none !important
+	+rm(640)
+		padding: 10px 0 8px
+		box-shadow: 0 0 15px rgba(1, 2, 2, 0.2)
+		background-color: $blue
+		position: fixed
+		bottom: 0
+		left: 0
+		width: 100%
+		right: 0
+		z-index: 95
+		display: block
+	&__content
+		display: flex
+		align-items: center
+		+rm(1024)
+			justify-content: center
+		+rm(1220)
+			padding-left: 40px
+	&__img
+		max-width: 65px
+		+rm(1024)
+			max-width: 74px
+		+rm(1220)
+			max-width: 60px
+	&__title
+		color: $white
+		font-size: 24px
+		font-weight: 700
+		line-height: 1
+		flex-shrink: 0
+		margin-left: 10px
+		margin-right: 10px
+		+rm(640)
+			font-size: 22px
+			span
+				display: block
+		+rm(1220)
+			font-size: 24px
+			margin-left: 19px
+			span
+				display: inline
+	&__action
+		width: 65px
+		height: 65px
+		.action__percent
+			font-size: 16px
+	&__timer-wrap
+		display: none
+		+rm(768)
+			display: flex
+			align-items: center
+			margin-left: auto
+			.timer-wrap__text
+				display: none
+		+rm(1024)
+			.timer-wrap__text
+				display: block
+	&__btn
+		max-width: 150px
+		font-size: 18px
+		flex-shrink: 0
+		margin-left: 10px
+		+rm(640)
+			margin-left: auto
+		+rm(1024)
+			max-width: 125px
+			margin-left: 20px
+		+rm(1220)
+			max-width: 180px

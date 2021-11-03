@@ -1,0 +1,90 @@
+.header {
+  padding: 10px 0;
+  box-shadow: 3px 3px 10px rgba(3, 3, 3, 0.15);
+  background-color: $orange;
+
+    //background: linear-gradient(-45deg, $white 78%,$orange  22%);
+
+
+  @include rm(1220) {
+    padding: 16px 0;
+  }
+}
+
+
+
+.header__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  //max-width: 145px;
+  //width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid $white;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background: transparent;
+  //@include rm(768) {
+  //  width: 90px
+  //}
+  @include rm(1024) {
+    margin-right: 50px;
+    margin-right: 60px;
+  }
+  //@include rm(1220) {
+  //  margin-right: 112px;
+  //  width: 96px;
+  //}
+}
+
+.logo__left {
+  color: #000;
+  padding: 12px;
+  background: $white;
+}
+
+.logo__right {
+  color: $white;
+  padding: 12px;
+}
+
+
+.header__menu {
+  display: none;
+  @include rm(640) {
+    display: flex
+  }
+}
+
+
+.header__timer-wrap {
+  display: none;
+  @include rm(1024) {
+    display: flex;
+    margin-left: auto;
+    margin-right: 15px;
+  }
+
+  @include rm(1220) {
+    margin-right: 22px
+  }
+}
+
+
+.header__btn {
+  max-width: 165px;
+  font-size: 16px;
+  @include rm(1220) {
+    max-width: 190px
+  }
+}
+
+

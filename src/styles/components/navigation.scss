@@ -1,0 +1,79 @@
+//nav
+.nav {
+
+  display: flex;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+
+
+
+
+  }
+
+  &__link {
+    color: $dark-grey;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted $dark-grey;
+    transition: all 0.3s;
+    @include rm(1024) {
+      font-size: 18px;
+    }
+
+    &:hover {
+      border-bottom: 1px dashed transparentize($color: #000000, $amount: 0.999);
+    }
+  }
+  &__icon {
+    margin-right: 13px;
+  }
+
+  @include rm(480) {
+    &__item {
+      //margin-bottom: 0;
+
+      &:not(:last-of-type) {
+        margin-right: 20px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  @include rm(640) {
+    &__item {
+      margin-bottom: 0;
+      &:not(:last-of-type) {
+        margin-right: 20px;
+      }
+    }
+  }
+  @include rm(768) {
+    &__item {
+
+      &:not(:last-of-type) {
+        margin-right: 45px;
+        margin-bottom: 0;
+      }
+    }
+
+  }
+
+  @include rm(1024) {
+    &__item {
+      &:not(:last-of-type) {
+        margin-right: 30px;
+        //padding-right: 18px;
+      }
+    }
+  }
+
+  @include rm(1220) {
+
+    &__link {
+      font-size: 16px;
+    }
+  }
+}
+

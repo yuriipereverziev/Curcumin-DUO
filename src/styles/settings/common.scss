@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 html{
   overflow-x: hidden;
@@ -97,110 +97,7 @@ br {
   line-height: 1;
   font-size: 0;
 }
-//nav
-.menu {
-  @include rm(640) {
-    display: flex;
-    &__item {
-      display: flex;
-      align-items: center;
-      &:not(:last-of-type) {
-        padding-right: 20px;
-        margin-right: 20px;
-        border-right: 1px solid transparentize($color: #e4e4e4, $amount: .75);
-      }
-    }
-    &__icon {
-      margin-right: 13px;
-    }
-    &__link {
-      color: $white;
-      border-bottom: 1px dotted $white;
-      transition: all 0.3s;
-      &:hover {
-        border-bottom: 1px dashed
-          transparentize($color: #000000, $amount: 0.999);
-      }
-    }
-  }
 
-  @include rm(1220) {
-    &__item {
-      padding-right: 39px;
-      border-right: 1px solid transparentize($color: #e4e4e4, $amount: .75);
-      &:not(:last-of-type) {
-        margin-right: 38px;
-        padding-right: 51px;
-      }
-    }
-    &__link {
-      font-size: 16px;
-    }
-  }
-}
-
-//timer
-.timer-wrap {
-  display: flex;
-  align-items: center;
-  &__text {
-    color: $white;
-    font-size: 16px;
-    max-width: 124px;
-    margin-right: 16px;
-    line-height: 18px;
-  }
-  .timer {
-    display: flex;
-    align-items: center;
-    &__block {
-      display: flex;
-    }
-    &__el {
-      width: 32px;
-      height: 40px;
-      border-radius: 4px;
-      font-size: 22px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      border: 2px solid $orange;
-      &:not(:last-of-type) {
-        margin-right: 2px;
-      }
-    }
-    &__dot {
-      margin: 0 4px;
-      display: block;
-      font-size: 19px;
-    }
-  }
-  &--light {
-    .timer-wrap {
-      &__text {
-        color: $white;
-      }
-    }
-    .timer {
-      &__dot, &__el {
-        color: $white;
-      }
-    }
-  }
-  &--dark {
-    .timer-wrap {
-      &__text {
-        color: $dark-grey;
-      }
-    }
-    .timer {
-      &__dot, &__el {
-        color: $dark-grey;
-      }
-    }
-  }
-}
 
 //btn
 .btn {

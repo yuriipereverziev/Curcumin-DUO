@@ -5,25 +5,42 @@ header.header
 				span.logo__left Duo
 				span.logo__right C&P
 
-			.header__menu.menu
-				.menu__item
-					img.menu__icon(src="img/menu-icon_1.png", alt="icon")
-					a.menu__link.js-scroll(href="#components") Состав
-				.menu__item
-					img.menu__icon(src="img/menu-icon_2.png", alt="icon")
-					a.menu__link.js-scroll(href="#reviews") Отзывы
-			.header__timer-wrap.timer-wrap.timer-wrap--light
-				.timer-wrap__text До конца акции осталось:
-				.timer
-					.timer__block
-						.timer__el 0
-						.timer__el 1
-					span.timer__dot :
-					.timer__block
-						.timer__el 2
-						.timer__el 0
-					span.timer__dot :
-					.timer__block
-						.timer__el 3
-						.timer__el 7
-			button.header__btn.btn.btn--small.ever-popup-btn Заказать звонок
+
+			.burger
+				span.burger-global.burger-top
+				span.burger-global.burger-middle
+				span.burger-global.burger-bottom
+
+
+			.header__menu
+
+				nav.header__nav.nav
+					.nav__item
+						img.nav__icon(src="img/menu-icon_1.png", alt="icon")
+						a.nav__link(href="#reviews") Отзывы
+					.nav__item
+						img.nav__icon(src="img/menu-icon_2.png", alt="icon")
+						a.nav__link.js-scroll(href="#components") Состав
+
+
+
+				.header__menu_wrapper
+
+					.header__timer.timer-wrap.timer-wrap--light
+						.timer-wrap__text До конца акции осталось:
+						.timer
+							.timer__block
+								.timer__el 0
+								.timer__el 1
+							span.timer__dot :
+							.timer__block
+								.timer__el 2
+								.timer__el 0
+							span.timer__dot :
+							.timer__block
+								.timer__el 3
+								.timer__el 7
+
+					button.header__btn.btn.btn--small.ever-popup-btn Заказать звонок
+
+

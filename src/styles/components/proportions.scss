@@ -1,0 +1,374 @@
+.proportions__title {
+  font-size: 26px;
+  margin-bottom: 15px;
+
+  @include rm(480) {
+    font-size: 29px;
+  }
+
+  @include rm(1024) {
+    margin-bottom: 30px;
+  }
+}
+
+.proportions__subtitle {
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 30px;
+  color: #342c24;
+  font-weight: 500;
+
+  @include rm(640) {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+
+  @include rm(1024) {
+    font-size: 24px;
+    margin-bottom: 100px;
+  }
+}
+
+.proportions__box {
+  @include rm(640) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 0;
+  }
+  @include rm(1024){
+    justify-content: center;
+  }
+}
+
+.proportions__img {
+  @include rm(1024) {
+    margin: 0 auto 0;
+  }
+}
+
+.proportions__circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  position: relative;
+  font-size: 17px;
+
+
+  @include rm(640) {
+    position: absolute;
+    top: -20px;
+    margin-bottom: 0;
+
+    &:before {
+      content: "";
+      width: 175px;
+      height: 1px;
+      position: absolute;
+      background: #342c24;
+    }
+
+  }
+
+  @include rm(768) {
+    width: 140px;
+    height: 140px;
+  }
+  @include rm(1024) {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+
+
+.proportions__circle--dark {
+  background: #342c24;
+  color: #fff;
+
+  &:after {
+    content: "";
+    width: 38px;
+    height: 50px;
+    background: url(../img/circles.png) center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -16px;
+    top: -11px;
+  }
+
+  @include rm(640) {
+    right: 20px;
+
+    &:before {
+      right: 65px;
+      top: 180px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  @include rm(768) {
+    &:before {
+      top: 210px;
+      right: 75px;
+      width: 210px;
+    }
+  }
+
+  @include rm(1024) {
+    right: 20px;
+
+    &:before {
+      width: 270px;
+      top: 225px;
+      right: 125px;
+    }
+  }
+
+  @include rm(1220) {
+    right: 40px;
+
+    &:before {
+      width: 285px;
+      transform: rotate(-30deg);
+    }
+  }
+}
+
+.proportions__circle--yellow {
+  color: #000;
+  background: #ffb400;
+
+  &:after {
+    content: "";
+    width: 60px;
+    height: 104px;
+    position: absolute;
+    left: -29px;
+    background: url(../img/sand.webp) center center no-repeat;
+    background-size: contain;
+  }
+
+
+  @include rm(640) {
+    left: 25px;
+
+
+    &:before {
+      left: 65px;
+      top: 180px;
+      transform: rotate(45deg);
+    }
+  }
+
+  @include rm(768) {
+
+    &:after {
+      width: 70px;
+      height: 114px;
+      left: -39px;
+    }
+
+
+    &:before {
+      left: 95px;
+      top: 185px;
+    }
+  }
+
+  @include rm(1024) {
+    left: 20px;
+
+
+    &:after {
+      width: 95px;
+      height: 139px;
+      left: -45px;
+      top: 15px;
+    }
+
+    &:before {
+      width: 230px;
+      transform: rotate(30deg);
+      left: 138px;
+      top: 203px;
+    }
+  }
+
+  @include rm(1220) {
+    left: 40px;
+
+    &:before {
+      left: 140px;
+    }
+  }
+
+}
+
+
+.proportions__wrapper {
+  @include rm(640) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @include rm(1024) {
+    justify-content: center;
+  }
+}
+
+.proportions .circle__text {
+  font-size: 18px;
+  font-weight: 700;
+  @include rm(768) {
+    font-size: 20px;
+  }
+
+  @include rm(1024) {
+    font-size: 24px;
+  }
+}
+
+.circle__num {
+  position: absolute;
+  color: #342c24;
+
+  font-size: 40px;
+
+  font-weight: 700;
+  z-index: 2;
+
+  @include rm(640) {
+    font-size: 44px;
+  }
+
+  @include rm(768) {
+    font-size: 50px;
+  }
+
+  @include rm(1024) {
+    font-size: 58px;
+    bottom: -10px;
+    //left: -28px;
+  }
+}
+
+.proportions__circle--yellow .circle__num {
+  left: -20px;
+  bottom: -5px;
+}
+
+
+.proportions__circle--dark .circle__num {
+  color: #ffb400;
+  position: absolute;
+  right: -18px;
+  bottom: -5px;
+}
+
+.circle__percent {
+  font-size: 30px;
+  @include rm(1024) {
+    font-size: 41px;
+  }
+}
+
+.proportions__text {
+  padding-left: 15px;
+  border-left: 4px solid #342c24;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+
+
+.proportions__text {
+  padding-left: 15px;
+  border-left: 4px solid #342c24;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.proportions__text--yellow-border {
+  border-color: #ffb400;
+}
+
+
+.proportions__list {
+  border-radius: 2px;
+  background: #ededed;
+  padding: 15px;
+}
+
+.proportions__list--yellow {
+  background: #fcefdb;
+}
+
+.proportions__list--yellow .proportions__item:before {
+  background: #ffb400;
+}
+
+.proportions__item {
+
+  font-size: 14px;
+  line-height: 1.2;
+  color: #433938;
+  position: relative;
+  padding-left: 25px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: 0;
+    background: #342c24;
+  }
+
+  @include rm(1024) {
+    font-size: 20px;
+    padding-left: 32px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.proportions .proportions__circle--mob {
+  @include rm(640) {
+    display: none;
+  }
+}
+
+.proportions__inner {
+  @include rm(640) {
+    width: 48%;
+  }
+}
+
+.proportions__inner--left {
+  margin-bottom: 25px;
+
+  @include rm(640){
+    margin-bottom: 0;
+  }
+  @include rm(1024) {
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,139 @@
+.form {
+  border-radius: 15px;
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  margin-bottom: 15px;
+  border: 2px solid #f6ae03;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
+
+  &::before {
+    content: 'Акция';
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -35px;
+    right: -19px;
+    width: 94px;
+    height: 71px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/sale.png) no-repeat center/contain;
+    @include rm(1220) {
+      top: -45px;
+      right: -25px;
+    }
+  }
+}
+
+.form__top {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form__title {
+  text-align: center;
+  font-size: 28px;
+  color: #4b3e30;
+  position: relative;
+  margin-bottom: 9px;
+  font-weight: 700;
+  line-height: 1;
+
+}
+
+.form__subtitle {
+  color: #ff4800;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  @include rm(1220) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__input {
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: inset 1.5px 2.6px 5px 0 rgba(34, 35, 39, 0.09);
+  border: solid 1px #dedddd;
+  padding: 20px 15px 20px 45px;
+  width: 100%;
+  transition: .3s;
+  color: #444;
+  font-size: 16px;
+}
+
+.form__input--wrap {
+  margin-bottom: 15px;
+  position: relative;
+  display: block;
+}
+
+.form__input--name:before,
+.form__input--phone:before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form__input--name:before {
+  width: 16px;
+  height: 18px;
+  background: url(../img/name.svg) no-repeat center/contain;
+}
+
+.form__input--phone:before {
+
+  width: 21px;
+  height: 20px;
+  background: url(../img/phone.svg) no-repeat center/contain;
+}
+
+.form__btn {
+  font-size: 27px;
+  margin-bottom: 15px;
+
+  @include rm(1220) {
+    margin-bottom: 15px;
+  }
+}
+
+.form__footnote {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #969696;
+}
+
+.lastpack {
+  font-weight: 700;
+  color: #ff4800;
+}
+
+.form__bottom {
+  font-size: 15px;
+  color: #665f5f;
+}
+
+.form__protec {
+  text-align: center;
+  color: #666;
+}
+
+.protec__img {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 15px;
+  line-height: 1.2;
+
+}

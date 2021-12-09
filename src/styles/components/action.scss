@@ -1,0 +1,315 @@
+.action.block {
+  @include rm(1220) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.action-form__title {
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 5px;
+  @include rm(480) {
+    margin-bottom: 10px;
+  }
+  @include rm(639) {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  @include rm(768) {
+    font-size: 40px;
+    line-height: 36px;
+    margin-bottom: 14px;
+  }
+  @include rm(1024) {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+.action-form__date {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-align: center;
+
+  @include rm(640){
+    width: 100%;
+  }
+
+  @include rm(1024) {
+    width: auto;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0;
+    margin-right: 5px;
+  }
+  @include rm(1220) {
+    font-size: 24px;
+    margin-right: 11px;
+  }
+}
+
+
+.action-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 460px;
+  margin: auto;
+  @include rm(1024) {
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+
+.action__timer {
+  margin-bottom: 0px;
+
+}
+
+.action__timer .timer__text {
+  text-align: center;
+  @include rm(1024) {
+    width: 125px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+.action-form__cert {
+  display: none;
+}
+
+.action-form__left {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.action-form__right {
+  max-width: 825px;
+  width: 100%;
+  @include rm(1220){
+    max-width: 100%;
+  }
+}
+
+.action__medal {
+  width: 66px;
+  position: absolute;
+  top: -15px;
+  left: 15px;
+}
+
+.action__medal--mob {
+  width: 66px;
+  position: absolute;
+  top: -15px;
+  left: 20px;
+}
+
+.action__prod {
+  display: none;
+  @include rm(1024) {
+    display: block;
+    position: relative;
+    max-width: 170px;
+    width: 100%;
+    margin-right: 20px;
+  }
+  @include rm(1220){
+    margin-right: 90px;
+    margin-left: 20px;
+  }
+}
+
+.action__prod--mob {
+  position: relative;
+  max-width: 200px;
+  margin-bottom: 20px;
+  @include rm(480) {
+    margin-bottom: 0;
+  }
+  @include rm(1024) {
+    display: none;
+  }
+}
+
+.action-form__top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+
+  @include rm(640){
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 25px;
+  }
+  @include rm(1024) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 17px;
+  }
+}
+
+.action__price.price {
+  padding-left: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+
+
+  margin-bottom: 10px;
+
+
+  &:before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    content: 'Акция';
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 94px;
+    height: 71px;
+    color: #fff;
+    background: url(../img/sale.png) no-repeat center/contain;
+    z-index: 2;
+    @include rm(1024){
+      top: -8px;
+    }
+  }
+
+  @include rm(480){
+    display: block;
+  }
+  @include rm(1024){
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+.action-form__percent--mob {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  z-index: 3;
+}
+
+
+.action-mob--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include rm(480) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @include rm(1024){
+    width: 100%;
+  }
+}
+
+.action .form__input-wrap{
+  margin-bottom: 20px;
+
+  @include rm(480) {
+    margin-bottom: 0;
+  }
+
+  @include rm(1024) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include rm(1220) {
+    max-width: 250px;
+  }
+}
+.action-form__input {
+  display: flex;
+}
+
+.action-form .form__footnote {
+  @include rm(1024){
+    max-width: 240px;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+}
+.action-form .form__btn {
+ @include rm(1024){
+   align-self: flex-start;
+   margin: 0;
+   max-width: 240px;
+ }
+
+  @include rm(1220){
+    max-width: 260px;
+  }
+}
+.action-form .form__input--wrap {
+  @include rm(1024){
+    margin-bottom: 0;
+  }
+}
+.action-form {
+  @include rm(1024){
+    width: 100%;
+  }
+}
+
+.action-form form {
+  @include rm(1024){
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+}
+
+.action .form__input {
+  @include rm(1024){
+    width: 240px;
+  }
+  @include rm(1220){
+    width: 280px;
+  }
+}
+
+
+.action__timer.timer-wrapper {
+  @include rm(640){
+    display: flex;
+  }
+  @include rm(1024){
+    margin-right: 0;
+  }
+}
+
+
+.action__product {
+  max-width: 180px;
+  width: 100%;
+
+  @include rm(480){
+    max-width: 160px;
+  }
+}
+
+
+

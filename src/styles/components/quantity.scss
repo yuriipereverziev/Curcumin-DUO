@@ -1,0 +1,185 @@
+.quantity__title {
+  margin-bottom: 25px;
+  @include rm(640){
+    width: 100%;
+  }
+  @include rm(1024) {
+    margin-bottom: 40px;
+  }
+  @include rm(1220) {
+    margin-bottom: 50px;
+  }
+}
+
+.quantity__list {
+  border-left: 2px solid #f6ae03;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  @include rm(768){
+    margin-bottom: 25px;
+    padding-left: 20px;
+  }
+
+  @include rm(1024){
+    margin-bottom: 35px;
+  }
+
+  @include rm(1220){
+    padding-left: 25px;
+    margin-bottom: 40px;
+  }
+}
+
+.quantity__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+
+.quantity__item-value {
+  font-weight: 700;
+  font-size: 24px;
+  width: 80px;
+  margin-right: 10px;
+  flex-shrink: 0;
+
+  @include rm(768){
+    font-size: 26px;
+  }
+  @include rm(1024){
+    font-size: 30px;
+    width: 100px;
+  }
+  @include rm(1220){
+    width: 140px;
+    font-size: 44px;
+  }
+}
+
+
+.quantity__img-wrap {
+  @include rm(640){
+    display: inline-block;
+    vertical-align: top;
+    max-width: 565px;
+    margin-top: 30px;
+    width: 48%;
+
+  }
+
+  @include rm(768){
+    margin-top: 20px;
+  }
+
+  @include rm(1024){
+    vertical-align: middle;
+  }
+
+}
+
+.quantity__info {
+  margin-bottom: 25px;
+  @include rm(640){
+    margin-right: 20px;
+    display: inline-block;
+    max-width: 565px;
+    width: 48%;
+    margin-bottom: 0;
+  }
+
+  @include rm(1024){
+    vertical-align: middle;
+  }
+}
+
+.quantity__item-desc {
+  padding: 5px;
+  padding-left: 10px;
+  background-color: #fbe2bb;
+  display: inline-block;
+  border-radius: 4px;
+
+  @include rm(1024){
+    font-size: 20px;
+  }
+  @include rm(1220){
+    padding: 15px;
+  }
+}
+
+
+.quantity__note {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #f6ae03;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  color: #222;
+
+  @include rm(640){
+    width: 610px;
+    //max-width: 620px;
+  }
+  @include rm(768){
+    width: 718px;
+    //max-width: 718px;
+    padding-left: 20px;
+    align-items: center;
+  }
+
+  @include rm(1024){
+    width: 100%;
+  }
+
+}
+
+.quantity__note-value {
+  font-size: 24px;
+  font-weight: 700;
+  padding-right: 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 6px;
+    width: 10px;
+    height: 1px;
+    background-color: #d3d3d3;
+    top: 50%;
+  }
+
+  @include rm(1024) {
+    font-size: 30px;
+    padding-right: 40px;
+
+    &::after {
+      width: 20px;
+      right: 10px;
+    }
+  }
+
+  @include rm(1220){
+    font-size: 44px;
+    padding-right: 60px;
+
+    &::after {
+      width: 25px;
+      right: 20px;
+    }
+  }
+}
+
+.quantity__note-desc {
+  font-weight: 500;
+
+  @include rm(1024) {
+    font-size: 20px;
+  }
+}

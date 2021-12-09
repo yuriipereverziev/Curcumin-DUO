@@ -1,0 +1,21 @@
+.banner
+    .container
+        .banner-content
+            picture
+                source(srcset='img/product-2.webp' type='image/webp')
+                img.banner-img(src='img/product-2.png' alt='product')
+            .banner__title
+                |  Только сегодня&nbsp;
+                span.date-0(data-format='dd monthFull') 10 Ноября
+            .banner__action Акция
+            .banner-price
+                .banner-price__title Цена:
+                .banner-price__item
+                    span.x_price_current 196
+                    | &nbsp;
+                    span.x_currency руб
+            .banner-timer.timer-wrapper
+
+                include timer
+
+            button.banner__btn.ever-popup-btn.btn Заказать

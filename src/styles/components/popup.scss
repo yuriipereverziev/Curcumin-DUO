@@ -1,0 +1,34 @@
+.popup {
+  background-color: #faf6f2;
+  border-radius: 10px;
+  padding: 10px;
+
+  @include rm(768) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+  }
+
+  @include rm(1220) {
+    padding: 30px 70px;
+  }
+}
+
+.popup__img-wrap {
+  display: none;
+
+  @include rm(768) {
+    display: block;
+    position: relative;
+    max-width: 350px;
+    margin-right: 25px;
+  }
+}
+
+.popup__form {
+  @include rm(768) {
+    margin-top: 30px;
+
+  }
+}

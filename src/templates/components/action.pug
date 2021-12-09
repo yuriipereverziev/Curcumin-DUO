@@ -1,0 +1,51 @@
+.action.block
+  .container
+    .action-wrapper
+
+
+      .action__prod
+        picture
+          source(type='image/webp' srcset='img/product.webp')
+          img.action-form__product(loading='lazy' src='img/product.png' alt='product' width='358' height='409')
+
+        .action__medal.animation__medal
+          img(loading='lazy' src='img/medal.png' alt='medal')
+
+
+
+
+      .action-form__right
+        p.action-form__title.text-bold
+          | Внимание!&nbsp;
+
+        .action-form__top
+
+          p.action-form__date
+            | Только сегодня&nbsp;
+            span.color-red.date-0(data-format='dd monthFull')
+
+
+          .action__price.price
+            include price
+
+          .action__timer.timer-wrapper
+            include timer
+
+
+        .action-mob--wrapper
+
+          .action__prod--mob
+            picture
+              source(type='image/webp' srcset='img/product.webp')
+              img.action__product(loading='lazy' src='img/product.png' alt='product' width='359' height='409')
+
+            .action__medal--mob
+              img(loading='lazy' src='img/medal.png' alt='medal' width='106' height='106')
+
+
+          .action-form
+            form.x_order_form(action='/submit' method='post')
+              include form-field
+
+            .form__footnote
+              | *При оформлении заказа

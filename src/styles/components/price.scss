@@ -1,0 +1,43 @@
+
+.price {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  @include rm(1220) {
+    margin-bottom: 15px;
+  }
+}
+
+.price .x_price_previous {
+  position: relative;
+  font-size: 33px;
+  line-height: 1;
+  color: #4b3e30;
+  @include rm(1220) {
+    font-size: 40px;
+  }
+}
+
+.price-new__title {
+  align-self: center;
+  font-size: 14px;
+  line-height: 1;
+  margin-right: 10px;
+  font-weight: 400;
+  color: #30302f;
+  text-align: left;
+}
+
+.price .x_price_current {
+  font-size: 44px;
+  color: #4b3e30;
+  line-height: 1;
+  font-weight: 700;
+  position: relative;
+}
+
+.price .x_currency {
+  font-size: 14px;
+  font-weight: 700;
+}

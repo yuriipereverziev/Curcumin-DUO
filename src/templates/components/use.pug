@@ -1,0 +1,40 @@
+section.use.block.block-bg
+    .container
+
+        h2.title.use__title
+            | Как принимать 
+            span.prod-color DUO C&P
+
+        .use__wrapper
+            ul.use__list
+                li.use__item
+                    | Выпивайте по 
+                    span.prod-color одной
+                    |  капсуле
+                li.use__item
+                    | Повторяйте прием 
+                    span.prod-color 3 раза
+                    |  в день
+                li.use__item
+                    | Принимайте не менее 
+                    span.prod-color 30 
+                    |  дней
+
+            .use__img-wrap
+                picture
+                    source(srcset='img/product-2.webp' type='image/webp')
+                    img.use__img(src='img/product-2.png' alt='image')
+                picture
+                    source(srcset='img/caps.webp' type='image/webp')
+                    img.use__img-caps(src='img/caps.png' alt='image')
+
+            .use__action
+                h3.use__action-title
+                    | Закажите 
+                    span.prod-color DUO C&P
+                    |  сейчас за 196 руб.
+                .use__action-timer.timer
+                    include timer
+                button.use__action-btn.btn.form-btn.ever-popup-btn(type='button') Заказать DUO C&P
+
+                span.use__footnote *При оформлении заказа

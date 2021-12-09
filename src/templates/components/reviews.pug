@@ -1,0 +1,61 @@
+mixin slide(slide)
+    li.reviews__item
+        .reviews__top
+            .reviews__img
+                picture
+                    source(srcset='img/' + slide.srcImg + '.webp' type='image/webp')
+                    img(src='img/' + slide.srcImg + '.jpg' alt='image' width="210" height="240" loading='lazy')
+
+            .reviews__info
+                p.reviews__name!=slide.name
+                p.reviews__city!=slide.city
+
+            .line.reviews__item-line
+
+        .reviews__text!=slide.text
+
+        button.reviews-text__btn
+
+-
+    const slideArray = [
+        {
+            srcImg: 'slide-1',
+            name: 'Алексей, 60 лет,',
+            city: 'г. Рязань',
+            text: 'У меня была постоянная усталость из-за диабета, такое чувство, что энергию всю забрали. Спасибо DUO C&P, что вернул меня в строй. Чувствую себя хорошо, диабет жизнь больше не портит.'
+        },
+        {
+            srcImg: 'slide-2',
+            name: 'Галина, 45 лет,',
+            city: 'г. Рязань',
+            text: 'Прежде всего хочу отметить очень быструю доставку. Посылка пришла буквально через 2 дня после того как я заказала. Заметила большую разницу до курса и после. Сахар нормализовался, не скачет.'
+        },
+        {
+            srcImg: 'slide-3',
+            name: 'Владимир, 54 года,',
+            city: 'г. Рязань',
+            text: 'Жена уже давно все уши прожужжала о пользе куркумина. В капсулах конечно его гораздо удобней пить, чем в чистом виде, да и эфект куда заметней. Чуть больше месяца — и чувствую себя здоровым и крепким.'
+        },
+
+        {
+            srcImg: 'slide-2',
+            name: 'Галина, 45 лет,',
+            city: 'г. Рязань',
+            text: 'Прежде всего хочу отметить очень быструю доставку. Посылка пришла буквально через 2 дня после того как я заказала. Заметила большую разницу до курса и после. Сахар нормализовался, не скачет.'
+        },
+    ];
+
+
+
+section.reviews.block.bg#reviews
+    .container
+        h2.reviews__title.title Отзывы о
+            span.prod-color
+                |  DUO C&P
+
+
+
+        ul.reviews__content
+            each slide in slideArray
+                +slide(slide)
+

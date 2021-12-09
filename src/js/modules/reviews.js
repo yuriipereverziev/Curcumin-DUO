@@ -1,104 +1,38 @@
-export default () => {
-   $(document).ready(function () {
+export default function () {
+    var arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="17.969" height="15.97" viewBox="0 0 17.969 15.97"><path fill="currentColor" fill-rule="evenodd"  class="cls-1" d="M633.921,9375.24a0.874,0.874,0,0,1,1.219,0,0.77,0.77,0,0,1,0,1.13l-6.181,5.8h14.176a0.837,0.837,0,0,1,.865.8,0.847,0.847,0,0,1-.865.82H628.959l6.181,5.79a0.782,0.782,0,0,1,0,1.14,0.874,0.874,0,0,1-1.219,0l-7.644-7.17a0.78,0.78,0,0,1,0-1.14Z" transform="translate(-626.031 -9375)"/></svg>';
 
-   var toggleFormBtn = $('.toggle-form-btn');
-   var reviewsBottom = $('.reviews__bottom');
-   var reviewsCta = $('.reviews-cta');
-   var reviewsInputsWrap = $('.reviews-form__field-wrap');
-   var inputFile = $('.input-file');
-   var labelFile = $('.reviews-form__file');
-   var reviewsInput = $('.reviews-input');
-   var reviewsInputText = $('.reviews-input-text');
-   var reviewsInputTextarea = $('.reviews-form__textarea');
-   var reviewsInputTextareaJS = document.querySelector('.reviews-form__textarea');
-   var reviewsInputName = $('.reviews-form__input-name');
-   var reviewsInputCity = $('.reviews-form__input-city');
-   var reviewsPopup = $('.reviews-popup');
-   var fileText = $('.reviews-form__file-text');
-   var fileImg = $('.reviews-form__file-img img');
-   var fileIcon = $('.reviews-form__checkmark-icon');
-   var fileFlag = true;
- 
-   reviewsInputTextareaJS.value = '';
-   reviewsInputTextarea.on('input', function () {
-     if ($(this).val().trim().length > 0) {
-       $(this).addClass('o-auto');
-     } else {
-       $(this).removeClass('o-auto');
-     }
-   });
-   inputFile.change(function (e) {
-     if (inputFile.val() && fileFlag) {
-       fileText.html('Фото загружено!');
-       fileImg.hide();
-       fileIcon.show();
-       labelFile.addClass('rloaded');
-       fileFlag = false;
-     }
-   });
-   reviewsInputText.on('input', function () {
-     var that = this;
-     setTimeout(function () {
-       var res = /[^a-zA-Zа-яА-ЯїЇєЄіІёЁ ]/g.exec(that.value);
-       that.value = that.value.replace(res, '');
- 
-       if (that.value.replace(res, '').length === 0) {
-         that.parentElement.classList.add('invalid');
-         that.parentElement.classList.remove('valid');
-       } else {
-         that.parentElement.classList.remove('invalid');
-         that.parentElement.classList.add('valid');
-       }
-     }, 0);
-   });
-   reviewsInputTextareaJS.addEventListener('input', function () {
-     var that = this;
-     if (that.value.length === 0) {
-       that.parentElement.classList.add('invalid');
-       that.parentElement.classList.remove('valid');
-     } else {
-       that.parentElement.classList.remove('invalid');
-       that.parentElement.classList.add('valid');
-     }
-   });
-   inputFile.click(function () {
-     if (!fileFlag) {
-       return false;
-     }
-   });
- 
-   toggleFormBtn.on('click', function () {
-     toggleFormBtn.hide();
-     reviewsCta.show();
-   });
- 
-   $('.reviews-form').submit(function () {
-     if (reviewsInputTextarea.val().length !== 0 && reviewsInputName.val().length !== 0 && reviewsInputCity.val().length !== 0) {
-       reviewsCta.hide();
-       toggleFormBtn.show();
-       reviewsPopup.fadeIn();
-       event.preventDefault();
-       setTimeout(function () {
-         reviewsPopup.fadeOut();
-       }, 2000);
-       fileFlag = true;
-       reviewsInput.val('');
-       fileText.html('Загрузить ваше фото');
-       fileImg.show();
-       fileIcon.hide();
-       labelFile.removeClass('rloaded');
-       reviewsInputsWrap.removeClass('invalid');
-       reviewsInputsWrap.removeClass('valid');
-       $('.reviews-form__star').removeClass('filled');
- 
-     } else {
-       reviewsInputsWrap.each(function (i) {
-         if (!reviewsInputsWrap[i].classList.contains('valid')) {
-           reviewsInputsWrap[i].classList.add('invalid');
-         }
-       });
-       event.preventDefault();
-     }
-   });
- });
- };
+    $(".reviews__content").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true,
+        prevArrow: '<button type="button" class="slick-prev reviews__arrow reviews__arrow--prev">' + arrow + '</button>',
+        nextArrow: '<button type="button" class="slick-next reviews__arrow reviews__arrow--next">' + arrow + '</button>',
+        dotsClass: 'slick-dots reviews__dots',
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }, {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
+    });
+
+    $(".reviews__content").on("afterChange", function (event, slick, currentSlide) {
+        $(this).find(".slick-slide.text-open").not(".slick-active").removeClass("text-open");
+    });
+    $(".reviews-text__btn").on("click", function () {
+        this.parentElement.classList.toggle("text-open");
+        console.log(this.parentElement)
+        $(".reviews__content").find(".slick-slide.slick-active").height("auto");
+        $(".reviews__content").find(".slick-list").height("auto");
+    });
+
+};

@@ -1,0 +1,186 @@
+.banner {
+  display: none;
+
+  @include rm(640) {
+    padding: 6px 0 7px;
+    background-color: #f6ae03;
+    //-webkit-box-shadow: 1px 2px 10px rgb(1 2 2 / 7%);
+    //box-shadow: 1px 2px 10px rgb(1 2 2 / 7%);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    z-index: 95;
+    display: block;
+  }
+}
+
+.banner-content {
+  @include rm(640) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.banner-img {
+  @include rm(640) {
+    max-width: 34px;
+  }
+
+  @include rm(1024) {
+    max-width: 36px
+
+  }
+
+}
+
+.banner__title {
+  @include rm(640) {
+    color: #342c24;
+    font-size: 21px;
+    font-weight: 700;
+    max-width: 160px;
+    margin-left: 10px;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  @include rm(1220) {
+    max-width: 100%;
+    margin-left: 19px;
+  }
+}
+
+.banner__title span {
+  display: block;
+}
+
+.banner__action {
+  @include rm(640) {
+    line-height: 1;
+    flex-shrink: 0;
+    width: 67px;
+    height: 51px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff5eb;
+    font-size: 11px;
+    font-weight: 900;
+    background: url(../img/mark.png) no-repeat center/contain;
+    margin: 0 10px 0 0;
+  }
+
+  @include rm(1220) {
+    margin-left: 10px;
+  }
+
+}
+
+.banner-price {
+  @include rm(640) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.banner-price__title {
+  @include rm(640) {
+    color: #30302f;
+    line-height: 1;
+    font-size: 14px;
+    margin-right: 4px;
+  }
+
+  @include rm(1220) {
+    margin-right: 9px;
+  }
+}
+
+.banner-price .x_price_current {
+  @include rm(640) {
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: -1.1px;
+  }
+}
+
+.banner-price .x_currency {
+  @include rm(640) {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+//.banner-timer {
+//
+//  @include rm(640) {
+//    display: none;
+//  }
+//  @include rm(1024) {
+//
+//    display: flex;
+//
+//    align-items: center;
+//    //margin-left: auto;
+//  }
+//
+//
+//}
+
+//.banner-timer__text {
+//  text-align: center;
+//  margin-bottom: 5px;
+//  font-size: 16px;
+//  color: #333;
+//  @include rm(1024) {
+//    text-align: left;
+//    margin-bottom: 0;
+//    max-width: 120px;
+//    margin-right: 10px;
+//  }
+//}
+
+.banner-timer.timer-wrapper{
+  display: none;
+  margin-right: 0;
+  @include rm(1024){
+    display: flex;
+  }
+}
+
+.banner__btn {
+  max-width: 150px;
+  margin: 0;
+
+  @include rm(1024){
+    max-width: 190px;
+  }
+}
+//  @include rm(640) {
+//    max-width: 130px;
+//    width: 100%;
+//    border-radius: 30px;
+//    border-width: 2px;
+//    font-size: 18px;
+//    padding: 12.5px 0;
+//    margin: 0;
+//    margin-left: 10px;
+//    flex-shrink: 0;
+//  }
+//
+//  @include rm(1220) {
+//    margin-left: 20px;
+//    max-width: 190px;
+//  }
+//
+//}
+

@@ -1,8 +1,12 @@
 .header {
-  position: relative;
-  box-shadow: 3px 3px 10px rgba(3, 3, 3, 0.15);
+  width: 100%;
+  position: fixed;
+  box-shadow: 0.7px 1.9px 10px 0 rgba(1, 2, 2, 0.07);
   background: linear-gradient(-45deg, $white 50%, $orange 50%);
-  //z-index: 1;
+  z-index: 3;
+  @include rm(768) {
+    position: relative;
+  }
 }
 
 .header__wrap {
@@ -12,40 +16,41 @@
   justify-content: space-between;
   padding: 10px 0;
   background: $white;
-  //z-index: 2;
 
   @include rm(768) {
     justify-content: flex-start;
   }
+
   @include rm(1220) {
     justify-content: flex-start;
-
   }
 
   &::before {
     position: absolute;
     transform: skewX(-45deg);
     content: "";
-    left: -54px;
+    left: -70px;
     width: 300px;
     height: 100%;
     background: $orange;
-    //z-index: -1;
+
+    @include rm(480){
+      left: -120px;
+    }
 
     @include rm(640) {
       left: -145px;
     }
     @include rm(767) {
-      left: -105px;
+      left: -120px;
     }
     @include rm(1024) {
-      left: -120px;
+      left: -130px;
     }
     @include rm(1220) {
       left: -90px;
     }
   }
-
 }
 
 .header__logo {
@@ -81,7 +86,6 @@
   color: #000;
   padding: 12px;
   background: $white;
-
 }
 
 .logo__right {
@@ -89,13 +93,9 @@
   padding: 12px;
 }
 
-
 .header__nav {
-  //display: none;
-
   display: flex;
   flex-direction: column;
-
 
   @include rm(480) {
     margin-right: 35px;
@@ -115,14 +115,14 @@
   @include rm(1220) {
     margin-right: 35px;
   }
-
 }
 
-
 .header__menu {
+  z-index: -1;
   width: 100%;
-  max-width: 300px;
+  height: auto;
   padding: 20px;
+  padding-top: 40px;
   background: $white;
   display: flex;
   flex-direction: column;
@@ -133,93 +133,80 @@
   transform: translateX(100%);
   transition: all .8s;
 
-
   @include rm(480) {
+   height: auto;
     flex-direction: row;
     justify-content: center;
     max-width: 100%;
     transform: translateY(-100%);
-    z-index: -3;
-
   }
   @include rm(640) {
     max-width: 100%;
-
-
   }
   @include rm(768) {
     transform: translateY(0);
     position: static;
-    z-index: 0;
     background: transparent;
     padding: 0;
+    z-index: 0;
     flex-direction: row;
     justify-content: flex-start;
   }
 }
-
 
 .header__menu.active {
   transform: translateX(0);
   transition: all .5s;
   @include rm(480) {
     transform: translateY(0);
-    //background: blue;
-  }
-
-}
-
-.header__timer {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
-  //display: none;
-
-
-  @include rm(768) {
-    display: none;
-  }
-  @include rm(1024) {
-    margin-bottom: 0;
-    display: flex;
-    margin-right: 30px;
-  }
-
-  @include rm(1220) {
-    flex-direction: row;
-    margin-right: 20px;
   }
 }
 
-.header__timer .timer-wrap__text {
-  max-width: 100%;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 5px;
+//.header__timer {
+//  display: flex;
+//  flex-direction: column;
+//  margin-bottom: 15px;
+//
+//  @include rm(768) {
+//    display: none;
+//  }
+//  @include rm(1024) {
+//    margin-bottom: 0;
+//    display: flex;
+//    margin-right: 30px;
+//  }
+//
+//  @include rm(1220) {
+//    flex-direction: row;
+//    margin-right: 20px;
+//  }
+//}
 
-  @include rm(1220) {
-    text-align: left;
-    max-width: 125px;
-    margin-bottom: 0;
-    margin-right: 15px;
-  }
-
-}
-
+//.header__timer .timer-wrapper__text {
+//  max-width: 100%;
+//  text-align: center;
+//  margin: 0;
+//  margin-bottom: 5px;
+//
+//  @include rm(1220) {
+//    text-align: left;
+//    max-width: 125px;
+//    margin-bottom: 0;
+//    margin-right: 15px;
+//  }
+//}
 
 .header__btn {
   max-width: 100%;
   font-size: 16px;
 
   @include rm(1024) {
-    //max-width: 190px;
     width: 190px;
   }
 }
 
 .header__menu_wrapper {
   @include rm(1024) {
-
     display: flex;
     align-items: center;
   }

@@ -1,74 +1,71 @@
-//timer
-.timer-wrap {
+.timer {
   display: flex;
   align-items: center;
 }
 
-.timer-wrap__text {
-  color: $dark-grey;
-  font-size: 16px;
-  max-width: 124px;
-  margin-right: 16px;
-  line-height: 18px;
-}
-
-.timer-wrap .timer {
+.timer-wrapper {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+
+  @include rm(768) {
+    display: none;
+  }
+  @include rm(1024) {
+    margin-bottom: 0;
+    display: flex;
+    margin-right: 30px;
+  }
+
+  @include rm(1220) {
+    flex-direction: row;
+    margin-right: 20px;
+  }
 }
 
-.timer-wrap .timer__block {
+
+.timer-wrapper__text {
+  max-width: 100%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5px;
+
+  @include rm(1220) {
+    text-align: left;
+    max-width: 125px;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+
+.timer__block {
   display: flex;
 }
 
-.timer-wrap .timer__el {
+.timer .timer__el {
+  display: flex;
   width: 32px;
   height: 40px;
   border-radius: 4px;
   font-size: 22px;
-  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-weight: 700;
-  border: 2px solid $orange;
-
-  &:not(:last-of-type) {
-    margin-right: 2px;
-  }
-
-  @include rm(1220){
-    width: 35px;
-    height: 45px;
-  }
+  border: 2px solid #f6ae03;
+  background: white;
 }
 
-.timer-wrap .timer__dot {
+.timer .timer__dot {
   margin: 0 4px;
   display: block;
   font-size: 19px;
 }
 
-//&--light {
-//  .timer-wrap {
-//    &__text {
-//      color: black;
-//    }
-//  }
-//  .timer {
-//    &__dot, &__el {
-//      color: black;
-//    }
-//  }
-//}
-//&--dark {
-//  .timer-wrap {
-//    &__text {
-//      color: $dark-grey;
-//    }
-//  }
-//  .timer {
-//    &__dot, &__el {
-//      color: $dark-grey;
-//    }
-//  }
-//}
+
+.timer .timer__el:not(:last-of-type) {
+  margin-right: 2px;
+}

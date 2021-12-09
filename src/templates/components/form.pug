@@ -1,33 +1,21 @@
-form.form.x_order_form(action="/submit" method="post")
-	.form__action.action
-		span.action__percent Акция!
+form.x_order_form.form(action='/submit' method='post')
 	.form__top
-		p.form__term.text-bold Только сегодня
-			span.date-0.nowrap(data-format="dd month")
-		.form__price.price
-			//- .price__val.price__val--old
-			//- 	h5.price__title Старая цена
-			//- 	p.price__wrap
-			//- 		span.x_price_previous.price__num 1980
-			//- 		span.x_currency.price__currency руб
-			.price__val.price__val--new
-				h5.price__title Акционная цена
-				p.price__wrap
-					span.x_price_current.price__num 990
-					span.x_currency.price__currency руб
-					span *
-		label.form__input-wrap.form__input-wrap--name
-			input.form__input(type="text" name="name" placeholder="Мое имя" required)
-		label.form__input-wrap.form__input-wrap--tel
-			input.form__input(type="tel" name="phone" placeholder="Мой телефон" required)
-		button.form__btn.btn.btn--big Заказать
-			span со скидкой
-		p.form__note *цена за порцию
-	.form__online.online
-		img.online__ico(src="img/online.png" alt="online")
-		p.online__text cейчас на сайте 
-			span.online__dynamic 7
-			|  человек
-	p.form__lastpack Осталось 
-		span.lastpack 13
-		|  упаковок
+		h3.form__title Внимание!
+		.form__subtitle
+			| только сегодня&nbsp;
+			span.date-0(data-format='dd monthFull')
+		.price
+			include price
+
+		include form-field
+
+		.form__footnote *При оформлении заказа
+
+		.form__bottom
+			| Осталось&nbsp;
+			span.lastpack 12
+			|  упаковок по Акции
+
+.form__protec.protect
+	img.protec__img( src="img/protect.png" alt="protect")
+	| Ваши данные защищены

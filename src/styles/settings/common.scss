@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.2;
+  overflow-x: hidden;
 }
 
 html {
@@ -153,11 +154,13 @@ br {
 }
 
 .bg {
-  background-color: transparentize($color: #e6f3ff, $amount: .3);
-  @include rm(1024) {
-    background-image: url("../img/block-bg.png");
 
+
+  @include rm(1024) {
+    background-color: transparent;
+    background-image: url("../img/block-bg.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 
   }
@@ -187,3 +190,7 @@ br {
 .bg {
   background-color: #fbf7f3;
 }
+
+//body, html {
+//   overflow-x: hidden;
+//}

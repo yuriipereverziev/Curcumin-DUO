@@ -2,16 +2,19 @@ form.x_order_form.form(action='/submit' method='post')
 	.form__top
 		h3.form__title Внимание!
 		.form__subtitle
-			| только сегодня&nbsp;
+			| Только сегодня&nbsp;
 			span.date-0(data-format='dd monthFull')
 		.price
 			include price
+
+
+	.form__bottom
 
 		include form-field
 
 		.form__footnote *При оформлении заказа
 
-		.form__bottom
+		.form__lastpack
 			| Осталось&nbsp;
 			span.lastpack 12
 			|  упаковок по Акции

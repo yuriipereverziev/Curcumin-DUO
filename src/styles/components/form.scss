@@ -5,13 +5,15 @@
   margin-right: auto;
   text-align: center;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border: 2px solid #f6ae03;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
+  background: white;
 
   &::before {
     content: 'Акция';
     font-size: 16px;
+    z-index: 1;
     font-weight: bold;
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
@@ -32,9 +34,29 @@
 }
 
 .form__top {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
+  background-color: #fbf7f3;
+position: relative;
+  padding: 10px;
+  padding-top: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px 10px 0 0;
+}
+
+.form__top::before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 135px 0 133px;
+  border-color: #fbf7f3 transparent transparent;
+}
+
+.form__bottom {
+  color: #fff;
+  padding: 10px 20px 20px;
 }
 
 .form__title {
@@ -42,7 +64,6 @@
   font-size: 28px;
   color: #4b3e30;
   position: relative;
-  margin-bottom: 9px;
   font-weight: 700;
   line-height: 1;
 
@@ -54,7 +75,7 @@
   font-weight: bold;
   margin-bottom: 15px;
   @include rm(1220) {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 
@@ -101,6 +122,9 @@
 .form__btn {
   font-size: 27px;
   margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 19px 20px;
+  line-height: 1;
 
   @include rm(1220) {
     margin-bottom: 15px;
@@ -110,16 +134,17 @@
 .form__footnote {
   text-align: center;
   font-size: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #969696;
 }
 
 .lastpack {
+
   font-weight: 700;
   color: #ff4800;
 }
 
-.form__bottom {
+.form__lastpack{
   font-size: 15px;
   color: #665f5f;
 }

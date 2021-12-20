@@ -27,7 +27,7 @@
 
   &::before {
     position: absolute;
-    transform: skewX(-45deg);
+    transform: skewX(-30deg);
     content: "";
     left: -70px;
     width: 300px;
@@ -48,7 +48,7 @@
       left: -130px;
     }
     @include rm(1220) {
-      left: -90px;
+      left: -115px;
     }
   }
 }
@@ -75,8 +75,9 @@
     font-size: 20px;
   }
   @include rm(1220) {
-    margin-right: 96px;
+    margin-right: 94px;
     font-size: 24px;
+    line-height: 1;
   }
 }
 
@@ -84,13 +85,13 @@
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
   color: #000;
-  padding: 12px;
+  padding: 7px 12px;
   background: $white;
 }
 
 .logo__right {
   color: $white;
-  padding: 12px;
+  padding: 7px 12px;
 }
 
 .header__nav {
@@ -113,7 +114,7 @@
     margin-right: 30px;
   }
   @include rm(1220) {
-    margin-right: 35px;
+    margin-right: 47px;
   }
 }
 
@@ -128,7 +129,7 @@
   flex-direction: column;
   align-items: center;
   position: fixed;
-  top: 64px;
+  top: 57px;
   right: 0;
   transform: translateX(100%);
   transition: all .8s;
@@ -162,50 +163,28 @@
   }
 }
 
-//.header__timer {
-//  display: flex;
-//  flex-direction: column;
-//  margin-bottom: 15px;
-//
-//  @include rm(768) {
-//    display: none;
-//  }
-//  @include rm(1024) {
-//    margin-bottom: 0;
-//    display: flex;
-//    margin-right: 30px;
-//  }
-//
-//  @include rm(1220) {
-//    flex-direction: row;
-//    margin-right: 20px;
-//  }
-//}
-
-//.header__timer .timer-wrapper__text {
-//  max-width: 100%;
-//  text-align: center;
-//  margin: 0;
-//  margin-bottom: 5px;
-//
-//  @include rm(1220) {
-//    text-align: left;
-//    max-width: 125px;
-//    margin-bottom: 0;
-//    margin-right: 15px;
-//  }
-//}
-
 .header__btn {
+
   max-width: 100%;
+  margin: 0;
   font-size: 16px;
 
+
+  @include rm(768) {
+    width: 170px;
+  }
   @include rm(1024) {
     width: 190px;
+  }
+  @include rm(1220){
+    width: 100%;
+    max-width: 190px;
+    font-size: 18px;
   }
 }
 
 .header__menu_wrapper {
+
   @include rm(1024) {
     display: flex;
     align-items: center;

@@ -82,17 +82,17 @@
   margin-left: auto;
   margin-right: auto;
 
-  &:before {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-image: url(../img/medal.png);
-    background-size: contain;
-  }
+  //&:before {
+  //  content: "";
+  //  display: block;
+  //  width: 60px;
+  //  height: 60px;
+  //  position: absolute;
+  //  top: 0;
+  //  right: 0;
+  //  background-image: url(../img/medal.png);
+  //  background-size: contain;
+  //}
 
   @include rm(640){
     margin-left: 0;

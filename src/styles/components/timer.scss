@@ -19,6 +19,7 @@
 
   @include rm(1220) {
     flex-direction: row;
+    align-items: center;
     margin-right: 20px;
   }
 }
@@ -32,7 +33,7 @@
 
   @include rm(1220) {
     text-align: left;
-    max-width: 125px;
+    //max-width: 125px;
     margin-bottom: 0;
     margin-right: 15px;
   }
@@ -44,8 +45,8 @@
 
 .timer .timer__el {
   display: flex;
-  width: 32px;
-  height: 40px;
+  width: 35px;
+  height: 45px;
   border-radius: 4px;
   font-size: 22px;
   -webkit-box-align: center;

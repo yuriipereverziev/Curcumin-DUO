@@ -1,3 +1,12 @@
+.symptoms.block {
+  @include rm(1024){
+    padding-top: 0px;
+  }
+  @include rm(1220){
+    padding-top: 150px;
+  }
+}
+
 .symptoms__title {
   margin-bottom: 25px;
 
@@ -234,9 +243,7 @@
   @include rm(1220) {
     font-size: 26px;
     line-height: 1;
-
-    padding: 30px;
-    padding-bottom: 25px;
+    padding: 30px 30px 25px;
   }
 }
 

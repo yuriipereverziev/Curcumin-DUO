@@ -97,6 +97,7 @@
   @include rm(640){
     margin-left: 0;
     margin-right: 0;
+    padding-top: 0;
   }
 
   @include rm(1024){

@@ -125,7 +125,7 @@
     margin-right: 20px;
   }
   @include rm(1220){
-    margin-right: 90px;
+    margin-right: 55px;
     margin-left: 20px;
   }
 }
@@ -298,6 +298,12 @@
   }
   @include rm(1024){
     margin-right: 0;
+  }
+}
+
+.action__timer .timer-wrapper__text {
+  @include rm(1220){
+    max-width: 130px;
   }
 }
 

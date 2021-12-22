@@ -48,6 +48,7 @@
     padding-bottom: 0px;
     justify-content: flex-end;
     align-items: flex-start;
+    z-index: 0;
 
     &::before {
       content: '';
@@ -56,6 +57,7 @@
       bottom: -56px;
       width: 338px;
       height: 428px;
+      z-index: -2;
     }
   }
 
@@ -304,7 +306,7 @@
 
   @include rm(1220) {
     position: absolute;
-    bottom: -203px;
+    bottom: -188px;
     left: -396px;
     max-width: 420px;
     //&::before {
@@ -341,12 +343,17 @@
 
 .promo__product-medal {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
+  top: -9px;
+  right: 5px;
+  width: 60px;
+  @include rm(1024) {
+    top: -15px;
+    right: -5px;
+  }
   @include rm(1220) {
-    width: 80px;
-    height: 80px;
+    top: -35px;
+    width: 90px;
+    height: 90px;
     background-size: 80px;
   }
 }
@@ -362,8 +369,8 @@
   }
   @include rm(1220) {
     width: 240px;
-    left: -140px;
-    bottom: -30px;
+    left: -154px;
+    bottom: -22px;
   }
 }
 
@@ -374,13 +381,13 @@
     display: block;
     position: absolute;
     bottom: 20px;
-    left: -30px;
+    left: -45px;
     width: 100px;
     z-index: -1;
   }
   @include rm(1220){
     width: 200px;
-    left: -80px;
+    left: -97px;
     bottom: 0;
   }
 }

@@ -27,7 +27,8 @@
 
   @include rm(1220) {
     padding-left: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
+    border-left: 5px solid #f6ae03;
   }
 }
 
@@ -39,8 +40,10 @@
     margin-bottom: 15px;
   }
 
-  @include rm(1220) {
-    align-items: flex-start;
+  @include rm(1220){
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
   }
 }
 
@@ -48,7 +51,8 @@
 .quantity__item-value {
   font-weight: 700;
   font-size: 24px;
-  width: 80px;
+  max-width: 80px;
+  width: 100%;
   margin-right: 10px;
   flex-shrink: 0;
 
@@ -57,14 +61,14 @@
   }
   @include rm(1024) {
     font-size: 30px;
-    width: 100px;
+    max-width: 100px;
   }
   @include rm(1220) {
-    width: 140px;
+    max-width: 140px;
     font-size: 44px;
+    margin-right: 5px;
   }
 }
-
 
 .quantity__img-wrap {
   @include rm(640) {
@@ -85,9 +89,9 @@
   }
   @include rm(1220) {
     position: absolute;
-    top: 0;
-    left: 570px;
-    width: 800px;
+    top: -25px;
+    left: 619px;
+    width: 834px;
     max-width: 100%;
   }
 
@@ -106,6 +110,12 @@
   @include rm(1024) {
     vertical-align: middle;
   }
+
+  @include rm(1220) {
+    width: 100%;
+    max-width: 600px;
+    margin-right: 0;
+  }
 }
 
 .quantity__item-desc {
@@ -119,7 +129,7 @@
     font-size: 20px;
   }
   @include rm(1220) {
-    padding: 15px;
+    padding: 7px 10px;
   }
 }
 
@@ -146,6 +156,13 @@
 
   @include rm(1024) {
     width: 100%;
+  }
+  @include rm(1220) {
+
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 33px;
   }
 
 }

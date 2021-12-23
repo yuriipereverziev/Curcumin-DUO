@@ -1,0 +1,19 @@
+section.attention.block
+    .container
+        .attention__wrapper
+            .attention__box
+                h2.attention__title  Внимание!
+                p.attention__subtitle
+                    | Только сегодня&nbsp;
+                    span.date-0(data-format='dd monthFull')
+
+
+            .attention__price.price
+                    include price
+
+            .attention__timer.timer
+               include timer
+
+
+            button.btn.attention__btn.ever-popup-btn Заказать
+            p.attention__note *При оформлении заказа

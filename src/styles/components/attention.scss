@@ -1,0 +1,169 @@
+.attention__wrapper {
+  text-align: center;
+
+  @include rm(640){
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 575px;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  //@include rm(768){
+  //  max-width: 540px;
+  //}
+
+  @include rm(1024){
+    max-width: 100%;
+  }
+}
+
+.attention__title {
+  font-size: 36px;
+  line-height: 1;
+  color: #342c24;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+  @include rm(1024){
+    text-align: left;
+  }
+}
+
+.attention__subtitle {
+  font-size: 22px;
+  margin-bottom: 15px;
+
+  color: #ff4800;
+  font-weight: bold;
+  line-height: 1;
+
+  @include rm(1024){
+    text-align: left;
+  }
+  @include rm(1220){
+    font-size: 24px;
+  }
+}
+
+.attention__price.price {
+  max-width: 250px;
+  padding-left: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  margin: 0 auto 20px;
+
+  &:before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    content: 'Акция';
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 94px;
+    height: 71px;
+    color: #fff;
+    background: url(../img/sale.png) no-repeat center/contain;
+    z-index: 2;
+    @include rm(1024){
+      top: -8px;
+    }
+  }
+
+  @include rm(480){
+    display: block;
+  }
+  @include rm(640){
+    margin-top: 10px;
+  }
+  @include rm(1024){
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin: 0;
+  }
+}
+
+.attention__timer.timer {
+  flex-direction: column;
+  margin-bottom: 10px;
+  @include rm(640) {
+    margin-bottom: 0;
+  }
+
+  @include rm(1220){
+    flex-direction: row;
+  }
+}
+
+
+.attention__timer .timer-wrapper__text {
+  @include rm(1220){
+    max-width: 125px;
+  }
+}
+
+.attention__btn {
+  margin-bottom: 10px;
+
+
+  display: block;
+  color: #fff;
+  background: #ff4800;
+  border-radius: 8px;
+  border-bottom: 5px solid #d53f03;
+  padding: 17px 51px;
+  font-size: 27px;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+  cursor: pointer;
+  margin: 0 auto;
+  line-height: 1;
+
+  margin-bottom: 10px;
+
+
+  @include rm(640){
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  @include rm(1024){
+    max-width: 180px;
+    margin-bottom: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @include rm(1220){
+    max-width: 210px;
+    padding-left: 51px;
+    padding-right: 51px;
+  }
+
+}
+
+.attention__note {
+  font-size: 15px;
+
+  @include rm(640){
+    width: 100%;
+    text-align: right;
+    padding-right: 45px;
+  }
+
+  @include rm(1024){
+    padding-right: 9px;
+  }
+  @include rm(1220){
+    padding-right: 20px;
+  }
+}

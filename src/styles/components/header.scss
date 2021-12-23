@@ -46,9 +46,11 @@
     }
     @include rm(1024) {
       left: -130px;
+      min-height: 90px;
     }
     @include rm(1220) {
       left: -115px;
+      min-height: auto;
     }
   }
 }

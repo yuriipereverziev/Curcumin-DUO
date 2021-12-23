@@ -119,13 +119,14 @@
 }
 
 .quantity__item-desc {
-  padding: 5px;
-  padding-left: 10px;
+  width: 100%;
+  padding: 5px 5px 5px 10px;
   background-color: #fbe2bb;
   display: inline-block;
   border-radius: 4px;
 
   @include rm(1024) {
+    width: auto;
     font-size: 20px;
   }
   @include rm(1220) {
@@ -145,11 +146,9 @@
 
   @include rm(640) {
     width: 610px;
-    //max-width: 620px;
   }
   @include rm(768) {
     width: 718px;
-    //max-width: 718px;
     padding-left: 20px;
     align-items: center;
   }
@@ -158,13 +157,8 @@
     width: 100%;
   }
   @include rm(1220) {
-
-    padding: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 33px;
+    padding: 5px 10px 5px 33px;
   }
-
 }
 
 .quantity__note-value {

@@ -121,8 +121,9 @@
   @include rm(768) {
     &:before {
       top: 210px;
-      right: 75px;
-      width: 210px;
+      right: 97px;
+      width: 206px;
+
     }
   }
 
@@ -133,16 +134,18 @@
       width: 270px;
       top: 225px;
       right: 140px;
+      transform: rotate(-34deg);
     }
   }
 
   @include rm(1220) {
     right: 105px;
 
+
     &:before {
       top: 222px;
       width: 285px;
-      transform: rotate(-34deg);
+
     }
     &:after {
       width: 122px;
@@ -173,8 +176,8 @@
 
 
     &:before {
-      left: 65px;
-      top: 180px;
+      left: 68px;
+      top: 175px;
       transform: rotate(45deg);
     }
   }
@@ -190,7 +193,7 @@
 
     &:before {
       left: 95px;
-      top: 185px;
+      top: 205px;
     }
   }
 

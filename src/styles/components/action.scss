@@ -36,7 +36,7 @@
   margin-bottom: 10px;
   text-align: center;
 
-  @include rm(640){
+  @include rm(640) {
     width: 100%;
   }
 
@@ -53,7 +53,6 @@
   }
 }
 
-
 .action-wrapper {
   display: flex;
   position: relative;
@@ -68,7 +67,6 @@
     align-items: center;
   }
 }
-
 
 .action__timer {
   margin-bottom: 0px;
@@ -96,7 +94,7 @@
 .action-form__right {
   max-width: 825px;
   width: 100%;
-  @include rm(1220){
+  @include rm(1220) {
     max-width: 100%;
   }
 }
@@ -124,7 +122,7 @@
     width: 100%;
     margin-right: 20px;
   }
-  @include rm(1220){
+  @include rm(1220) {
     margin-right: 55px;
     margin-left: 20px;
   }
@@ -149,7 +147,7 @@
   align-items: center;
   margin-bottom: 40px;
 
-  @include rm(640){
+  @include rm(640) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -168,10 +166,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   position: relative;
-
-
   margin-bottom: 10px;
-
 
   &:before {
     display: flex;
@@ -189,15 +184,15 @@
     color: #fff;
     background: url(../img/sale.png) no-repeat center/contain;
     z-index: 2;
-    @include rm(1024){
+    @include rm(1024) {
       top: -8px;
     }
   }
 
-  @include rm(480){
+  @include rm(480) {
     display: block;
   }
-  @include rm(1024){
+  @include rm(1024) {
     margin-bottom: 0;
     padding-bottom: 0;
     padding-top: 0;
@@ -211,7 +206,6 @@
   z-index: 3;
 }
 
-
 .action-mob--wrapper {
   display: flex;
   flex-direction: column;
@@ -221,12 +215,12 @@
     justify-content: space-around;
   }
 
-  @include rm(1024){
+  @include rm(1024) {
     width: 100%;
   }
 }
 
-.action .form__input-wrap{
+.action .form__input-wrap {
   margin-bottom: 20px;
 
   @include rm(480) {
@@ -241,41 +235,45 @@
     max-width: 250px;
   }
 }
+
 .action-form__input {
   display: flex;
 }
 
 .action-form .form__footnote {
-  @include rm(1024){
+  @include rm(1024) {
     max-width: 240px;
     margin-left: auto;
     margin-bottom: 0;
   }
 }
-.action-form .form__btn {
- @include rm(1024){
-   align-self: flex-start;
-   margin: 0;
-   max-width: 240px;
- }
 
-  @include rm(1220){
+.action-form .form__btn {
+  @include rm(1024) {
+    align-self: flex-start;
+    margin: 0;
+    max-width: 240px;
+  }
+
+  @include rm(1220) {
     max-width: 260px;
   }
 }
+
 .action-form .form__input--wrap {
-  @include rm(1024){
+  @include rm(1024) {
     margin-bottom: 0;
   }
 }
+
 .action-form {
-  @include rm(1024){
+  @include rm(1024) {
     width: 100%;
   }
 }
 
 .action-form form {
-  @include rm(1024){
+  @include rm(1024) {
     display: flex;
     justify-content: space-between;
     margin-bottom: 8px;
@@ -283,36 +281,34 @@
 }
 
 .action .form__input {
-  @include rm(1024){
+  @include rm(1024) {
     width: 240px;
   }
-  @include rm(1220){
+  @include rm(1220) {
     width: 280px;
   }
 }
 
-
 .action__timer.timer-wrapper {
-  @include rm(640){
+  @include rm(640) {
     display: flex;
   }
-  @include rm(1024){
+  @include rm(1024) {
     margin-right: 0;
   }
 }
 
 .action__timer .timer-wrapper__text {
-  @include rm(1220){
+  @include rm(1220) {
     max-width: 130px;
   }
 }
-
 
 .action__product {
   max-width: 180px;
   width: 100%;
 
-  @include rm(480){
+  @include rm(480) {
     max-width: 160px;
   }
 }

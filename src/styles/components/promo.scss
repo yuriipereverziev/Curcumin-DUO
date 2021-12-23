@@ -1,7 +1,6 @@
 .promo.block {
   position: relative;
   padding-top: 90px;
-  //background: #fef9f6;
 
   @include rm(480) {
     padding-top: 94px;
@@ -281,14 +280,6 @@
 
   @include rm(768) {
     max-width: 350px;
-    //&::before {
-    //  content: '';
-    //  position: absolute;
-    //  width: 258px;
-    //  height: 350px;
-    //  top: -50px;
-    //  right: -30px;
-    //}
   }
 
   @include rm(1024) {
@@ -297,11 +288,6 @@
     left: -288px;
     max-width: 288px;
     margin-top: 0;
-    //&::before {
-    //  height: 371px;
-    //  top: -160px;
-    //  right: -10px;
-    //}
   }
 
   @include rm(1220) {
@@ -309,10 +295,6 @@
     bottom: -188px;
     left: -396px;
     max-width: 420px;
-    //&::before {
-    //  top: -232px;
-    //  right: 28px;
-    //}
   }
 }
 

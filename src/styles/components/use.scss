@@ -4,7 +4,6 @@
   @include rm(1220) {
     margin-bottom: 30px;
   }
-
 }
 
 .use__action-title {
@@ -129,11 +128,11 @@
     top: 0;
   }
 
-  @include rm(640){
+  @include rm(640) {
     margin-bottom: 0;
   }
 
-  @include rm(1220){
+  @include rm(1220) {
     padding: 40px 0;
     max-width: 240px;
     margin-left: 160px;
@@ -146,11 +145,11 @@
   width: 100%;
   margin: 0 auto;
 
-  @include rm(640){
+  @include rm(640) {
     max-width: 355px;
   }
 
-  @include rm(1024){
+  @include rm(1024) {
     max-width: 360px;
   }
 }
@@ -161,34 +160,35 @@
   position: relative;
   margin-bottom: 5px;
 
-  @include rm(640){
+  @include rm(640) {
     max-width: 100%;
   }
 }
 
 .use__action-timer .timer-wrapper__text {
-  @include rm(640){
+  @include rm(640) {
     text-align: left;
     margin-bottom: 0;
   }
 }
+
 .use__action-timer {
   flex-direction: column;
   margin-bottom: 25px;
 
-  @include rm(640){
+  @include rm(640) {
     flex-direction: row;
   }
 }
 
 .use__footnote {
-font-size: 15px;
+  font-size: 15px;
   display: block;
   text-align: center;
 }
 
 .use__wrapper {
-  @include rm(640){
+  @include rm(640) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

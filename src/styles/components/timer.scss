@@ -24,7 +24,6 @@
   }
 }
 
-
 .timer-wrapper__text {
   max-width: 100%;
   text-align: center;
@@ -33,7 +32,6 @@
 
   @include rm(1220) {
     text-align: left;
-    //width: 130px;
     margin-bottom: 0;
     margin-right: 15px;
   }
@@ -65,7 +63,6 @@
   display: block;
   font-size: 19px;
 }
-
 
 .timer .timer__el:not(:last-of-type) {
   margin-right: 2px;

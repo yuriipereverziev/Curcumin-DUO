@@ -138,8 +138,25 @@
     padding: 117px 0 20px;
   }
 
+  .footer-wrapper {
+    margin-bottom: 50px;
+    justify-content: flex-start;
+  }
+
   .footer-info__payment__item:not(:last-of-type) {
-    margin-right: 40px;
+    margin-right: 55px;
+  }
+
+  .footer-info__payment__item{
+    font-size: 12px;
+  }
+
+  .footer-info__delivery__item {
+    font-size: 14px;
+  }
+
+  .footer-info__delivery__title {
+    font-size: 20px;
   }
 
   .footer-info {
@@ -151,6 +168,21 @@
   }
 
   .footer-info__payment__title {
+    font-size: 20px;
     margin-right: 40px;
+  }
+
+  .footer__lock {
+    margin-right: 250px;
+  }
+
+  .footer__count--online,
+  .footer__count--offline{
+    font-size: 20px;
+  }
+
+  .footer__operators__online {
+    padding-left: 45px;
+    margin-right: 45px;
   }
 }

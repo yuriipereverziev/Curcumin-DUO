@@ -1,6 +1,9 @@
 .banner {
   display: none;
 
+  @include  r(639){
+    display: none!important;
+  }
   @include rm(640) {
     padding: 6px 0 7px;
     background-color: #f6ae03;

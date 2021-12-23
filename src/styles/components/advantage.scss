@@ -1,3 +1,9 @@
+.advantage.block {
+  @include rm(1220){
+    padding-bottom: 50px;
+  }
+}
+
 .advantage__title {
   margin-bottom: 25px;
 
@@ -13,6 +19,13 @@
     max-width: 370px;
     width: 100%;
     font-size: 38px;
+  }
+}
+
+.advantage__title span {
+  @include rm(1024){
+    display: block;
+    margin-bottom: 15px;
   }
 }
 
@@ -79,12 +92,15 @@
 }
 
 .advantage__img-wrap {
+  position: relative;
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
   max-width: 200px;
   margin-left: auto;
   margin-right: auto;
+
+
 
   @include rm(640){
     margin-left: 0;
@@ -100,5 +116,23 @@
 
   @include rm(1220){
     max-width: 310px;
+  }
+}
+
+.advantage-medal {
+  position: absolute;
+  top: -9px;
+  right: 5px;
+  width: 60px;
+  @include rm(1024) {
+    top: -15px;
+    right: -5px;
+  }
+  @include rm(1220) {
+    top: -30px;
+    right: 15px;
+    width: 90px;
+    height: 90px;
+    background-size: 80px;
   }
 }

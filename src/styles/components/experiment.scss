@@ -1,0 +1,148 @@
+.experiment__title {
+  font-size: 27px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+
+  @include rm(1024){
+      margin-bottom: 20px;
+  }
+}
+
+.experiment__subtitle {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 500;
+
+  @include rm(640){
+    margin-bottom: 30px;
+  }
+  @include rm(1024){
+    font-size: 24px;
+    margin-bottom: 45px;
+  }
+  @include rm(1220){
+    margin-bottom: 35px;
+  }
+}
+
+.experiment__list {
+  max-width: 290px;
+  margin: 0 auto;
+  @include rm(480){
+    max-width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include rm(1024){
+    max-width: 100%;
+  }
+}
+
+.experiment__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+
+  @include rm(480){
+    display: block;
+    text-align: center;
+    width: calc(50% - 8px);
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:not(:nth-last-child(-n+2)) {
+      margin-bottom: 15px;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 15px;
+    }
+  }
+
+  @include rm(1024){
+    width: calc(25% - 12px);
+
+    &:not(:last-child) .experiment__item-wrap:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 1px;
+      background-color: #d3d3d3;
+      right: -7px;
+      top: 0;
+      height: 100%;
+    }
+
+
+    &:not(:last-child) {
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+
+  }
+
+  @include rm(1220){
+
+    width: calc(25% - 23px);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &:not(:last-child) .experiment__item-wrap:before {
+      right: -15px;
+      top: 20px;
+      height: 60%;
+    }
+  }
+}
+
+.experiment__item-wrap {
+  color: #68ac26;
+  font-size: 40px;
+  font-weight: 700;
+  margin-right: 15px;
+
+
+  @include rm(480){
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+
+  @include rm(1024){
+    font-size: 70px;
+    position: relative;
+  }
+  @include rm(1220){
+    font-size: 80px;
+    margin-bottom: 0;
+  }
+}
+
+
+.experiment__text {
+  font-size: 16px;
+  line-height: 1.4;
+
+  @include rm(480){
+    text-align: center;
+  }
+
+
+  @include rm(1024){
+    font-size: 18px;
+  }
+  @include rm(1220){
+    font-size: 20px;
+  }
+}

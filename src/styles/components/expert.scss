@@ -18,7 +18,7 @@
   }
 
   @include rm(1220) {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
     font-size: 24px;
   }
 }
@@ -52,11 +52,18 @@
       background-image: url(../img/expert-bg.png);
     }
   }
+
+  @include rm(1220){
+    width: 51%;
+  }
 }
 
 .expert__img {
   @include rm(1024) {
     margin: 0 auto;
+  }
+  @include rm(1220) {
+    margin-left: 90px;
   }
 }
 
@@ -68,6 +75,7 @@
 
   @include rm(1220) {
     margin-bottom: 75px;
+    width: 49%;
   }
 }
 

@@ -1,6 +1,6 @@
-export default () => {
+export default function () {
     $(window).on("scroll resize", function () {
-        hideBannerScroll(".x_order_form", ".footer") // сюда через запятую дописываем классы блоков, которые должны скрыть баннер
+        hideBannerScroll(".x_order_form", ".footer",".attention") // сюда через запятую дописываем классы блоков, которые должны скрыть баннер
     });
 
     function hideBannerScroll() {

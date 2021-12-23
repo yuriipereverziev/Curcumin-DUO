@@ -4,21 +4,6 @@
   }
 }
 
-.cert .container {
-  padding-left: 10px;
-  padding-right: 10px;
-
-  @include rm(1024) {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-
-  @include rm(1220) {
-    padding-left: 185px;
-    padding-right: 185px;
-  }
-}
-
 .cert__title {
   margin-bottom: 20px;
 
@@ -30,14 +15,29 @@
     text-align: center;
     margin-bottom: 40px;
   }
+
+  @include rm(1220) {
+    margin-bottom: 50px;
+  }
 }
 
 .cert__main {
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
   @include rm(1024) {
     justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  @include rm(1220) {
+    padding-left: 160px;
+    padding-right: 160px;
   }
 }
 

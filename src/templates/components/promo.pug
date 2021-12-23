@@ -1,51 +1,49 @@
-section.promo.block.bg
-    .container
-        .promo__wrapper
+.container
+    .promo__wrapper
 
-            .promo__info
-                h2.title.promo__title
-                    | Устраните симптомы диабета, которые мешают вам жить
+        .promo__info
+            h2.title.promo__title
+                | Устраните симптомы диабета, которые мешают вам жить
 
-                h3.promo__subtitle
-                    | Комфортная нормализация уровня сахара в крови
-                    span.line.promo__subtitle-line
+            h3.promo__subtitle
+                | Комфортная нормализация уровня сахара в крови
+                span.line.promo__subtitle-line
 
-                ul.promo__list.list
-                    li.promo__item.item Поможет сбросить лишний вес
-                    li.promo__item.item Решит проблему частого мочеиспускания
-                    li.promo__item.item Предотвратит потерю зрения
+            ul.promo__list.list
+                li.promo__item.item Поможет сбросить лишний вес
+                li.promo__item.item Решит проблему частого мочеиспускания
+                li.promo__item.item Предотвратит потерю зрения
 
 
-            .promo__product
-                picture
-                    source(type='image/webp' srcset='img/product-1.webp')
-                    img.product__img(src='img/product-1.png' alt='product' width="420" height="341")
+        .promo__product
+            picture
+                source(type='image/webp' srcset='img/product-1.webp')
+                img.product__img(src='img/product-1.png' alt='product' width="420" height="341")
 
-                img.promo__product-medal(src='img/medal.png' alt='')
-                //img.promo__product-medals(src='img/medals.png' alt='')
-                picture
-                    source(type='image/webp' media='(min-width:1024px)' srcset='img/caps.webp')
-                    source(media='(min-width:1024px)' srcset='img/caps.png')
-                    source(srcset='img/dot.png')
-                    img.promo__product-caps(src='img/caps.png' alt='')
-                picture
-                    source(type='image/webp' media='(min-width:1024px)' srcset='img/leaf.webp')
-                    source(media='(min-width:1024px)' srcset='img/leaf.png')
-                    source(srcset='img/dot.png')
-                    img.promo__product-leaf(src='img/leaf.png' alt='')
+            img.promo__product-medal(src='img/medal.png' alt='image')
+            picture
+                source(type='image/webp' media='(min-width:1024px)' srcset='img/caps.webp')
+                source(media='(min-width:1024px)' srcset='img/caps.png')
+                source(srcset='img/dot.png')
+                img.promo__product-caps(src='img/caps.png' alt='image')
+            picture
+                source(type='image/webp' media='(min-width:1024px)' srcset='img/leaf.webp')
+                source(media='(min-width:1024px)' srcset='img/leaf.png')
+                source(srcset='img/dot.png')
+                img.promo__product-leaf(src='img/leaf.png' alt='image')
 
 
 
-                img.cert__img.cert__img--mobile(src='img/medals.png' alt='product' width="100" height="84")
+            img.cert__img.cert__img--mobile(src='img/medals.png' alt='product' width="100" height="84")
 
 
-            .promo__form
-                include form
+        .promo__form
+            include form
 
 
 
-        .promo__cert
-            img.cert__img(src='img/medals.png' alt='product' width="100" height="84")
+    .promo__cert
+        img.cert__img(src='img/medals.png' alt='product' width="100" height="84")
 
 
 

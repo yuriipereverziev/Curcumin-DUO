@@ -16,12 +16,19 @@
   }
 }
 
+.promo.last-block {
+  padding-top: 25px;
+  @include rm(480) {
+    padding-top: 30px;
+  }
+}
+
 .promo.bg {
   @include rm(1024) {
     background-position: bottom 100px center;
   }
   @include rm(1220) {
-    background-position: bottom 85px center;
+    background-position: bottom 137px center;
   }
 }
 

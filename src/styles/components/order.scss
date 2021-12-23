@@ -60,7 +60,7 @@
     max-width: 270px;
     padding-bottom: 30px;
     margin-top: 35px;
-    padding-top: 60px;
+    padding-top: 55px;
     &::before {
       width: 70px;
       height: 70px;
@@ -100,11 +100,11 @@
 
   @include rm(1024){
     font-size: 22px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   @include rm(1220){
-    line-height: 1.45;
+    line-height: 1.2;
   }
 }
 

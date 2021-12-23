@@ -104,6 +104,12 @@
   position: absolute;
   top: -15px;
   left: 15px;
+
+  @include rm(1220){
+    width: 55px;
+    top: -28px;
+    left: 116px;
+  }
 }
 
 .action__medal--mob {

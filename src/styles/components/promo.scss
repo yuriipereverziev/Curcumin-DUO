@@ -39,11 +39,12 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    margin: 0 auto;
   }
 
   @include rm(768) {
     max-width: 650px;
-    margin: 0 auto;
+
   }
 
   @include rm(1024) {
@@ -210,11 +211,15 @@
   font-weight: 500;
   font-size: 18px;
 
+  padding-top: 5px;
+  padding-bottom: 5px;
+
   br {
     display: none;
   }
 
   @include rm(640) {
+    padding-bottom: 0;
     font-size: 16px;
     text-align: center;
     position: relative;

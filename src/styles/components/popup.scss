@@ -32,3 +32,12 @@
 
   }
 }
+
+.popup__img-medal {
+  @include rm(768){
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    width: 80px
+  }
+}

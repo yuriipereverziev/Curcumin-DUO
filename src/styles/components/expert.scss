@@ -155,6 +155,10 @@
   margin-right: 5px;
   max-width: 70px;
   @include rm(480){
+    max-width: 100px;
+  }
+
+  @include rm(1024){
     margin-right: 15px;
     max-width: 100%;
   }
@@ -164,6 +168,10 @@
   max-width: 50px;
 
   @include rm(480){
+    max-width: 70px;
+  }
+
+  @include rm(1024){
     max-width: 100%;
   }
 }

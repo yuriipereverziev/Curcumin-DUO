@@ -103,7 +103,7 @@
   width: 66px;
   position: absolute;
   top: -15px;
-  left: 15px;
+  right: 10px;
 
   @include rm(1220){
     width: 55px;
@@ -169,8 +169,8 @@
 
 .action__price.price {
   padding-left: 100px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   position: relative;
   margin-bottom: 15px;
 
@@ -196,6 +196,8 @@
   }
 
   @include rm(480) {
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: block;
   }
   @include rm(1024) {

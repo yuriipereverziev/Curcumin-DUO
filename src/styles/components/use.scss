@@ -145,12 +145,23 @@
     background-image: url(../img/medal.png);
     background-size: contain;
     background-position: center;
-    right: -23px;
-    top: 0;
+    right: 7px;
+    top: 10px;
   }
 
   @include rm(640) {
     margin-bottom: 20px;
+  }
+
+  @include rm(1024){
+    max-width: 230px;
+    margin-bottom: 0;
+    &:before {
+      width: 70px;
+      height: 70px;
+      right: 2px;
+      top: 8px;
+    }
   }
 
   @include rm(1220) {
@@ -185,6 +196,15 @@
   border-radius: 5px;
   position: relative;
   margin-bottom: 5px;
+  padding: 18px 20px;
+
+  -webkit-box-shadow: 0 -5px 0 0 #c53b05 inset;
+  box-shadow: 0 -5px 0 0 #c53b05 inset;
+
+  &:hover {
+    -webkit-box-shadow: 0 -5px 0 0 #b13505 inset;
+    box-shadow: 0 -5px 0 0 #b13505 inset;
+  }
 
   @include rm(640) {
     max-width: 100%;

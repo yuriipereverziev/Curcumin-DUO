@@ -122,11 +122,13 @@
 .advantage-medal {
   position: absolute;
   top: -9px;
-  right: 5px;
+  right: 20px;
   width: 60px;
   @include rm(1024) {
+    width: 70px;
+    height: 70px;
     top: -15px;
-    right: -5px;
+    right: 25px;
   }
   @include rm(1220) {
     top: -30px;

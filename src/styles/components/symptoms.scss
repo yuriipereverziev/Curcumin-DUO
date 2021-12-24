@@ -43,6 +43,59 @@
   }
 }
 
+.symptoms__item--left {
+  position: relative;
+  @include rm(1024){
+   .symptoms__item--wrapper:before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      filter: drop-shadow(0 0 20px rgba(0,0,0,.1));
+      position: absolute;
+      right: -14px;
+      top: 0;
+      border-width: 20px 15px 0 0;
+      border-color: #fff transparent transparent;
+    }
+
+    .symptoms__item--wrapper:nth-child(1)::before {
+      border-width: 20px 0 0 15px;
+      right: -14px;
+      top: auto;
+      bottom: 0;
+      border-color: transparent transparent #fff #fff;
+    }
+  }
+
+}
+
+.symptoms__item--right {
+  position: relative;
+  @include rm(1024){
+    .symptoms__item--wrapper:before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      filter: drop-shadow(0 0 20px rgba(0,0,0,.1));
+      position: absolute;
+      left: -14px;
+      top: 0;
+      border-width: 20px 0 0 15px;
+      border-color: #fff transparent transparent;
+    }
+
+    .symptoms__item--wrapper:nth-child(1)::before {
+      top: auto;
+      left: -14px;
+      bottom: 0;
+      border-color: transparent #fff transparent transparent;
+      border-width: 20px 15px 0 0;
+    }
+  }
+}
+
 .symptoms__item {
   position: relative;
   width: 100%;

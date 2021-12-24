@@ -66,6 +66,7 @@
   position: relative;
   font-weight: 700;
   line-height: 1;
+  margin-bottom: 5px;
 
 }
 
@@ -75,7 +76,7 @@
   font-weight: bold;
   margin-bottom: 15px;
   @include rm(1220) {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
 
@@ -120,11 +121,18 @@
 }
 
 .form__btn {
-  font-size: 25px;
+  font-size: 28px;
   margin-bottom: 15px;
   border-radius: 5px;
   padding: 18px 20px;
   line-height: 1;
+  -webkit-box-shadow: 0 -5px 0 0 #c53b05 inset;
+  box-shadow: 0 -5px 0 0 #c53b05 inset;
+
+  &:hover {
+    -webkit-box-shadow: 0 -5px 0 0 #b13505 inset;
+    box-shadow: 0 -5px 0 0 #b13505 inset;
+  }
 
   @include rm(1220) {
     margin-bottom: 15px;

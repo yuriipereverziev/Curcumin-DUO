@@ -165,6 +165,8 @@
       background-image: linear-gradient(to top, #fff 0, rgba(255, 255, 255, 0) 100%);
     }
 
+
+
   }
 
   @include rm(1024) {
@@ -187,10 +189,23 @@
   width: calc(100% - 45px);
 }
 
-
 .text-open .reviews__text {
-  max-height: 800px;
+  @include rm(768){
+    max-height: 300px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+
+    &:before {
+      display: none
+    }
+  }
+
 }
+
+
+//.text-open .reviews__text {
+//  max-height: 800px;
+//}
 
 .reviews-text__btn {
   @include rm(640) {
@@ -230,7 +245,7 @@
 
 
 .text-open .reviews-text__btn {
-  background-color: #d6123c;
+  background-color: #ffdd8b;
 
   &:after {
     opacity: 0;

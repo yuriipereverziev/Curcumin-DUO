@@ -33,13 +33,23 @@
     background-position: center bottom, center center;
     background-size: contain;
     padding-bottom: 30px;
-    background-image: url(../img/symp-img.webp), url(../img/symp-bg.webp);
   }
 
   @include rm(1220){
     padding-bottom: 35px;
     background-position: center bottom -70px, center center;
     background-size: 365px;
+  }
+}
+
+.no-webp .symptoms__list {
+  @include rm(1024){
+    background-image: url(../img/symp-img.png), url(../img/symp-bg.png);
+  }
+}
+.webp .symptoms__list {
+  @include rm(1024){
+    background-image: url(../img/symp-img.webp), url(../img/symp-bg.webp);
   }
 }
 

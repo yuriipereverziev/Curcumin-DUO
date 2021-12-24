@@ -29,6 +29,7 @@
     position: absolute;
     transform: skewX(-30deg);
     content: "";
+    top: 0;
     left: -70px;
     width: 300px;
     height: 100%;
@@ -59,6 +60,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  flex-shrink: 0;
   font-size: 16px;
   font-weight: 700;
   border: 2px solid $white;

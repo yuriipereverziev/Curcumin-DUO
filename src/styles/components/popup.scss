@@ -26,6 +26,30 @@
   }
 }
 
+.popup__form .form {
+  margin-bottom: 0;
+
+  &:before {
+    left: -25px;
+    right: auto;
+  }
+
+  @include rm(768) {
+    margin-bottom: 20px;
+    &:before {
+      left: auto;
+      right: -19px;
+    }
+  }
+}
+
+.popup__form .protect {
+  display: none;
+  @include rm(768){
+    display: block;
+  }
+}
+
 .popup__form {
   @include rm(768) {
     margin-top: 30px;
@@ -34,7 +58,7 @@
 }
 
 .popup__img-medal {
-  @include rm(768){
+  @include rm(768) {
     position: absolute;
     top: -20px;
     right: -10px;

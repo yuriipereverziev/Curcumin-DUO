@@ -53,12 +53,29 @@
       left: -50px;
       bottom: 0;
       z-index: -1;
-      background-image: url(../img/expert-bg.png);
     }
   }
 
   @include rm(1220){
     width: 51%;
+  }
+}
+
+.webp .expert__img-wrap {
+  @include rm(1024){
+    &:before {
+      background-image: url(../img/expert-bg.webp);
+
+    }
+  }
+}
+
+.no-webp .expert__img-wrap {
+  @include rm(1024){
+    &:before {
+      background-image: url(../img/expert-bg.png);
+
+    }
   }
 }
 

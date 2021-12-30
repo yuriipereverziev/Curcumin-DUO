@@ -4,7 +4,7 @@ mixin slide(slide)
             .reviews__img
                 picture
                     source(srcset='img/' + slide.srcImg + '.webp' type='image/webp')
-                    img(src='img/' + slide.srcImg + '.jpg' alt='image' width="210" height="240" loading='lazy')
+                    img(src='img/' + slide.srcImg + '.jpg' alt='image' width="210" height="240")
 
             .reviews__info
                 p.reviews__name!=slide.name

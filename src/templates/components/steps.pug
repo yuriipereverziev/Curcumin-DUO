@@ -1,32 +1,33 @@
 .steps.bg-grey
   .steps__second
     .container
-      img.steps__expert(loading='lazy', src='img/expert-2.png', alt='expert' width='208' height='343')
+
+      picture
+        source(type='image/webp' srcset='img/expert-2.webp')
+        img.steps__expert(src='img/expert-2.png', alt='expert' width='208' height='343')
+
       .steps__second--recommend
         p
           b Виктор Сахаров,&nbsp;
           span врач-эндокринолог
 
-        img.expert__asign(src='img/asign.png', alt='approver')
-        img.expert__seal(src='img/seal.png', alt='approver')
+        img.expert__asign(src='img/asign.png', alt='approver' width="136" height="70")
+        img.expert__seal(src='img/seal.png', alt='approver' width="85" height="85")
 
       ul.steps__list
         li.steps__item.item
-
           p
             span Для ускорения эффекта DUO-C&P
 
             |  следует воздержаться от жирной пищи и сладостей
 
         li.steps__item.item
-
           p
             span Для максимального эффекта DUO-C&P
 
             |  следует употреблять больше свежих овощей
 
         li.steps__item.item
-
           p
             span Для предупреждения диабета
 

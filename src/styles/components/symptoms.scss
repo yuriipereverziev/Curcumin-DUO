@@ -42,16 +42,19 @@
   }
 }
 
-.no-webp .symptoms__list {
-  @include rm(1024){
-    background-image: url(../img/symp-img.png), url(../img/symp-bg.png);
-  }
-}
+
 .webp .symptoms__list {
   @include rm(1024){
     background-image: url(../img/symp-img.webp), url(../img/symp-bg.webp);
   }
 }
+
+.no-webp .symptoms__list {
+  @include rm(1024){
+    background-image: url(../img/symp-img.png), url(../img/symp-bg.png);
+  }
+}
+
 
 .symptoms__item--left {
   position: relative;
@@ -123,15 +126,6 @@
 
   @include rm(1024) {
     width: auto;
-
-    &:before {
-      content: "";
-      display: block;
-      width: 15px;
-      height: 20px;
-      position: absolute;
-      background-image: url(../img/symp-img.png);
-    }
   }
 }
 

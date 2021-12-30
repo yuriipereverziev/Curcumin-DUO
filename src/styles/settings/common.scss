@@ -159,15 +159,23 @@ br {
 }
 
 .bg {
-
-
   @include rm(1024) {
     background-color: transparent;
     background-image: url("../img/block-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
 
+.webp .bg {
+  @include rm(1024) {
+    background-image: url("../img/block-bg.webp");
+  }
+}
+.no-webp .bg {
+  @include rm(1024) {
+    background-image: url("../img/block-bg.jpg");
   }
 }
 
